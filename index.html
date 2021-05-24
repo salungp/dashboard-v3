@@ -1,0 +1,1245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+
+    <!-- Font style -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Mona Dashboard</title>
+  </head>
+  <body>
+    <div class="content-wrapper d-flex">
+      <div class="sidebar">
+        <a class="sidebar-logo" href="#">
+          <img src="assets/img/logo.png" alt="Logo">
+        </a>
+        <div class="d-flex justify-content-center">
+          <button class="add-project-button">
+            <div class="icon-plus"></div>
+          </button>
+        </div>
+        <div class="sidebar-menu">
+          <a class="sidebar-link" href="#">
+            <div class="icon-home-active"></div>
+          </a>
+          <a class="sidebar-link" href="#">
+            <div class="icon-project"></div>
+          </a>
+          <a class="sidebar-link" href="#">
+            <div class="icon-profile"></div>
+          </a>
+          <a class="sidebar-link" href="#">
+            <div class="icon-qa"></div>
+          </a>
+          <a class="sidebar-link" href="#">
+            <div class="icon-settings"></div>
+          </a>
+          <a class="sidebar-link drop-bottom" href="#">
+            <div class="icon-logout"></div>
+          </a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-header">
+          <button class="button-toggle">
+            <div class="icon-toggle"></div>
+          </button>
+          <div class="content-header-right d-flex align-items-center">
+            <div class="dropdown">
+              <button class="btn" style="margin-right: 24px;" type="button" id="myprojects" data-bs-toggle="dropdown" aria-expanded="false">
+                My Projects
+              </button>
+              <ul class="dropdown-menu dropdown-menu-custom" aria-labelledby="myprojects">
+                <li><a class="dropdown-item" href="#">Project 1</a></li>
+                <li><a class="dropdown-item" href="#">Project 2</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Create new project</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item d-inline-flex align-items-center" href="#"><div class="icon-folder"></div> My Project</a></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-outline-secondary dropdown-toggle rounded-ten" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                jhon@example.com
+              </button>
+              <ul class="dropdown-menu dropdown-menu dropdown-menu-custom" aria-labelledby="dropdownMenuButton2">
+                <li><a class="dropdown-item active" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- content -->
+        <div class="content-inner">
+          <div class="content-inner-header">
+            <h2 class="content-title">Website QA</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card-custom card-custom-height">
+                <div class="card-custom-body">
+                  <h5 class="label-bold">Enter the URL you want to test</h5>
+                  <form class="d-flex pt-2 pb-2">
+                    <input class="form-control me-2 custom-input" type="search" placeholder="http://site.example.com" aria-label="Search">
+                    <button class="btn btn-orange button-width btn-rounded btn-custom" type="submit">Start Test</button>
+                  </form>
+                  <a class="custom-link label-bold" href="#">Customize test</a>
+                  <div class="row mt-3">
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label class="form-label label-bold" for="type-url">Type of URL</label>
+                        <select name="" class="form-control custom-input">
+                          <option>Website page - live</option>
+                          <option>Website page - live</option>
+                          <option>Website page - live</option>
+                          <option>Website page - live</option>
+                          <option>Website page - live</option>
+                          <option>Website page - live</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label class="form-label label-bold" for="type-url">Root Domain</label>
+                        <input type="text" name="" class="form-control custom-input">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="progress-item mt-3">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <small class="text-muted">Progress</small>
+                      <small class="text-muted">60%</small>
+                    </div>
+                    <div class="progress progress-rounded">
+                      <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card-custom card-custom-height">
+                <div class="card-custom-body">
+                  <h5 class="label-bold">Website Tested</h5>
+                  <div class="text-muted">https://www.setmore.com/salon</div>
+                  <div class="row pt-4">
+                    <div class="col-md-4">
+                      <div class="progress-circle-box">
+                        <svg class="big-circle">
+                          <circle cx="70" cy="70" r="70"></circle>
+                          <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="progress-description">
+                          <small class="text-muted text-center d-block mb-2">Test Score</small>
+                          <h4 class="label-bold text-center">90/100</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="progress-item mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                          <small class="text-muted">Meta Tags</small>
+                          <small class="text-muted">25/100</small>
+                        </div>
+                        <div class="progress progress-rounded">
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                      <div class="progress-item mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                          <small class="text-muted">Images</small>
+                          <small class="text-muted">55/100</small>
+                        </div>
+                        <div class="progress progress-rounded">
+                          <div class="progress-bar bg-danger" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                      <div class="progress-item mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                          <small class="text-muted">Performance</small>
+                          <small class="text-muted">60/100</small>
+                        </div>
+                        <div class="progress progress-rounded">
+                          <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                      <div class="progress-item mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                          <small class="text-muted">Server And Security</small>
+                          <small class="text-muted">85/100</small>
+                        </div>
+                        <div class="progress progress-rounded">
+                          <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-custom-footer d-flex justify-content-between">
+                    <div></div>
+                    <div class="float-right">
+                      <a class="custom-link d-inline-flex align-items-center" style="margin-right: 30px" href="#"><div class="excel-icon"></div><span>Download XLS</span></a>
+                      <a class="custom-link d-inline-flex align-items-center" href="#"><div class="pdf-icon"></div><span>Download PDF</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Checkbox Section -->
+
+          <div class="d-flex justify-content-between" style="margin-bottom: 30px;">
+            <div></div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label label-bold" for="flexCheckDefault">
+                Hide Item Passed
+              </label>
+            </div>
+          </div>
+
+          <!-- Card Custom -->
+
+          <div class="card-custom">
+            <div class="card-custom-header d-flex align-items-center">
+              <h5 class="label-bold no-margin" style="margin-right: 36px">Meta Tags</h5>
+              <div class="progress-item" style="margin-right: 24px">
+                <small class="mb-2">4 Failed</small>
+                <div class="progress progress-rounded progress-mini">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress-item" style="margin-right: 24px">
+                <small class="mb-2">4 Warning</small>
+                <div class="progress progress-rounded progress-mini">
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress-item" style="margin-right: 24px">
+                <small class="mb-2">4 Passed</small>
+                <div class="progress progress-rounded progress-mini">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card cutom body -->
+
+            <div class="card-custom-body">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="label-bold d-flex align-items-center">
+                    <div class="icon-check"></div> Meta Title
+                  </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="title-status">
+                      <span class="text-success label-bold">PASS.</span> Your webpage is using a title tag
+                    </div>
+                    <button type="button" class="button-link" data-bs-toggle="tooltip" data-bs-placement="left" title="Your webpage's meta title is an HTML tag that defines the title of your page. This tag displays your page title in search engine results, at the top of a user's browser, and also when your page is bookmarked in a list of favorites. A concise, descriptive title tag that accurately reflects your page's topic is important for ranking well in search engines.">
+                      <div class="icon-info"></div>
+                    </button>
+                  </div>
+                  <div class="custom-card-content mb-3">
+                    <div class="sub-text mb-2"><span class="label-bold">Title Tag -</span> <span class="text-muted">How To Disable Chrome Incognito Mode On Windows And Mac</span></div>
+                    <div class="sub-text"><span class="label-bold">H1 Heading Tag -</span> <span class="text-muted">How To Disable Chrome Incognito Mode On Windows And Mac</span></div>
+                  </div>
+                  <small>Length - <span class="text-success">62 characters</span> | Casing - <span class="text-success">Camel Casing</span></small>
+                </div>
+              </div>
+            </div>
+
+            <!-- End card custom body -->
+
+            <div class="custom-divider"></div>
+
+            <div class="card-custom-body">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="label-bold d-flex align-items-center">
+                    <div class="icon-x"></div> Meta Title
+                  </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="title-status">
+                      <span class="text-danger label-bold">FAIL.</span> Your webpage is using a title tag
+                    </div>
+                    <button type="button" class="button-link" data-bs-toggle="tooltip" data-bs-placement="left" title="Your webpage's meta title is an HTML tag that defines the title of your page. This tag displays your page title in search engine results, at the top of a user's browser, and also when your page is bookmarked in a list of favorites. A concise, descriptive title tag that accurately reflects your page's topic is important for ranking well in search engines.">
+                      <div class="icon-info"></div>
+                    </button>
+                  </div>
+                  <ul class="mb-3">
+                    <li>Title tag is more than 65 characters</li>
+                    <li>Title tag is not in camel casing or sentence casing</li>
+                    <li>Title tag is exactly equal to the H1 Heading tag</li>
+                  </ul>
+                  <div class="custom-card-content mb-3">
+                    <div class="sub-text mb-2"><span class="label-bold">Title Tag -</span> <span class="text-muted">How To Disable Chrome Incognito Mode On Windows And Mac</span></div>
+                    <div class="sub-text"><span class="label-bold">H1 Heading Tag -</span> <span class="text-muted">How To Disable Chrome Incognito Mode On Windows And Mac</span></div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div></div>
+                    <button class="btn btn-danger btn-rounded">How to fix it</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- End card custom body -->
+
+            <div class="custom-divider"></div>
+
+            <div class="card-custom-body">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="label-bold d-flex align-items-center">
+                    <div class="icon-x"></div> Meta Title
+                  </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="title-status">
+                      <span class="text-danger label-bold">FAIL.</span> Your webpage is using a title tag
+                    </div>
+                    <button type="button" class="button-link" data-bs-toggle="tooltip" data-bs-placement="left" title="Your webpage's meta title is an HTML tag that defines the title of your page. This tag displays your page title in search engine results, at the top of a user's browser, and also when your page is bookmarked in a list of favorites. A concise, descriptive title tag that accurately reflects your page's topic is important for ranking well in search engines.">
+                      <div class="icon-info"></div>
+                    </button>
+                  </div>
+                  <div class="custom-card-content mb-3">
+                    <div class="sub-text mb-2"><span class="label-bold">Title Tag -</span> <span class="text-muted">How To Disable Chrome Incognito Mode On Windows And Mac</span></div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small>Length - <span class="text-success">62 characters</span> | Casing - <span class="text-success">Camel Casing</span></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- End card custom body -->
+
+            <div class="custom-divider"></div>
+
+            <div class="card-custom-body">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="label-bold d-flex align-items-center">
+                    <div class="icon-warning"></div> Meta Title
+                  </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="title-status">
+                      <span class="text-danger label-bold">PASS, but can be improved</span> Title tag is too short, try adding more content
+                    </div>
+                    <button type="button" class="button-link" data-bs-toggle="tooltip" data-bs-placement="left" title="Your webpage's meta title is an HTML tag that defines the title of your page. This tag displays your page title in search engine results, at the top of a user's browser, and also when your page is bookmarked in a list of favorites. A concise, descriptive title tag that accurately reflects your page's topic is important for ranking well in search engines.">
+                      <div class="icon-info"></div>
+                    </button>
+                  </div>
+                  <div class="custom-card-content mb-3">
+                    <div class="sub-text mb-2"><span class="label-bold">Title Tag -</span> <span class="text-muted">How To Disable Chrome Incognito Mode On Windows And Mac</span></div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small>Length - <span class="text-success">62 characters</span> | Casing - <span class="text-success">Camel Casing</span></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- End card custom body -->
+
+            <div class="custom-divider"></div>
+
+            <div class="card-custom-body">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="label-bold d-flex align-items-center">
+                    <div class="icon-x"></div> Canonical URL
+                  </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="title-status">
+                      <span class="text-danger label-bold">FAIL.</span> Your webpage is using a title tag
+                    </div>
+                    <button type="button" class="button-link" data-bs-toggle="tooltip" data-bs-placement="left" title="Your webpage's meta title is an HTML tag that defines the title of your page. This tag displays your page title in search engine results, at the top of a user's browser, and also when your page is bookmarked in a list of favorites. A concise, descriptive title tag that accurately reflects your page's topic is important for ranking well in search engines.">
+                      <div class="icon-info"></div>
+                    </button>
+                  </div>
+                  <div class="custom-card-content mb-3">
+                    <div class="sub-text mb-2"><span class="label-bold">Actual URL -</span> <span class="text-muted">https://www.setmore.com/premium</span></div>
+                    <div class="sub-text"><span class="label-bold">Canonical URL -</span> <span class="text-muted">https://www.setmore.com/pricing</span></div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label label-bold" for="flexCheckDefault">
+                        This is intentional
+                      </label>
+                    </div>
+                    <button class="btn btn-danger btn-rounded">How to fix it</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- End card custom body -->
+
+            <div class="custom-divider"></div>
+
+            <div class="card-custom-body">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="label-bold d-flex align-items-center">
+                    <div class="icon-check"></div> Open Graph Image
+                  </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="title-status">
+                      <span class="text-success label-bold">PASS.</span> Your webpage is using an <a class="custom-link" href="#">Open Graph Image</a>
+                    </div>
+                    <button type="button" class="button-link" data-bs-toggle="tooltip" data-bs-placement="left" title="Your webpage's meta title is an HTML tag that defines the title of your page. This tag displays your page title in search engine results, at the top of a user's browser, and also when your page is bookmarked in a list of favorites. A concise, descriptive title tag that accurately reflects your page's topic is important for ranking well in search engines.">
+                      <div class="icon-info"></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- End card custom body -->
+
+            <div class="custom-divider"></div>
+
+            <div class="card-custom-body">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="label-bold d-flex align-items-center">
+                    <div class="icon-check"></div> Favicon
+                  </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="title-status">
+                      <span class="text-success label-bold">PASS.</span> Congratulations! Your website appears to have a favicon.
+                    </div>
+                    <button type="button" class="button-link" data-bs-toggle="tooltip" data-bs-placement="left" title="Your webpage's meta title is an HTML tag that defines the title of your page. This tag displays your page title in search engine results, at the top of a user's browser, and also when your page is bookmarked in a list of favorites. A concise, descriptive title tag that accurately reflects your page's topic is important for ranking well in search engines.">
+                      <div class="icon-info"></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- End card custom body -->
+
+            <div class="custom-divider"></div>
+
+            <div class="card-custom-body">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="label-bold d-flex align-items-center">
+                    <div class="icon-x"></div> Favicon
+                  </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="title-status">
+                      <span class="text-danger label-bold">FAIL.</span> Your website does not have a favicon.
+                    </div>
+                    <button type="button" class="button-link" data-bs-toggle="tooltip" data-bs-placement="left" title="Your webpage's meta title is an HTML tag that defines the title of your page. This tag displays your page title in search engine results, at the top of a user's browser, and also when your page is bookmarked in a list of favorites. A concise, descriptive title tag that accurately reflects your page's topic is important for ranking well in search engines.">
+                      <div class="icon-info"></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- End custom card -->
+
+          <div class="card-custom">
+            <div class="card-custom-header d-flex align-items-center">
+              <h5 class="label-bold no-margin" style="margin-right: 36px">Images</h5>
+              <div class="progress-item d-flex align-items-center" style="margin-right: 24px">
+                <div class="progress progress-rounded progress-mini" style="margin-right: 12px">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="text-danger">90/100</div>
+              </div>
+            </div>
+
+            <!-- Card cutom body -->
+
+            <div class="card-custom-body">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="label-bold d-flex align-items-center">
+                    <div class="icon-check"></div> Image Title
+                  </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="title-status">
+                      <span class="text-success label-bold">PASS.</span>  All the Images used in the page meet quality requirements
+                    </div>
+                    <button type="button" class="button-link" data-bs-toggle="tooltip" data-bs-placement="left" title="Your webpage's meta title is an HTML tag that defines the title of your page. This tag displays your page title in search engine results, at the top of a user's browser, and also when your page is bookmarked in a list of favorites. A concise, descriptive title tag that accurately reflects your page's topic is important for ranking well in search engines.">
+                      <div class="icon-info"></div>
+                    </button>
+                  </div>
+                  <ul class="mb-3">
+                    <li>All the images have an Alternate text</li>
+                    <li>All the images have a file size lesser than 150 KB</li>
+                    <li>All the images have a proper file name</li>
+                  </ul>
+                  <a class="custom-link label-bold" href="#">See Details</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- End card custom body -->
+
+            <div class="custom-divider"></div>
+
+            <div class="card-custom-body">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="label-bold d-flex align-items-center">
+                    <div class="icon-x"></div> Image Title
+                  </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="title-status">
+                      <span class="text-danger label-bold">FAIL.</span>  All the Images used in the page meet quality requirements
+                    </div>
+                    <button type="button" class="button-link" data-bs-toggle="tooltip" data-bs-placement="left" title="Your webpage's meta title is an HTML tag that defines the title of your page. This tag displays your page title in search engine results, at the top of a user's browser, and also when your page is bookmarked in a list of favorites. A concise, descriptive title tag that accurately reflects your page's topic is important for ranking well in search engines.">
+                      <div class="icon-info"></div>
+                    </button>
+                  </div>
+                  <ul class="mb-3">
+                    <li>All the images have an Alternate text</li>
+                    <li>All the images have a file size lesser than 150 KB</li>
+                    <li>All the images have a proper file name</li>
+                  </ul>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <a class="custom-link label-bold" href="#">See Details</a>
+                    <button class="btn btn-danger btn-rounded">How to fix it</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card custom divider -->
+          <div class="card-custom">
+            <div class="card-custom-header d-flex align-items-center">
+              <h5 class="label-bold no-margin" style="margin-right: 36px">Other Checks</h5>
+              <div class="progress-item d-flex align-items-center" style="margin-right: 24px">
+                <div class="progress progress-rounded progress-mini" style="margin-right: 12px">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="text-danger">90/100</div>
+              </div>
+            </div>
+
+            <!-- Card cutom body -->
+            <div class="card-custom-body">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="label-bold d-flex align-items-center">
+                    <div class="icon-check"></div> Duplicate Content
+                  </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="title-status">
+                      <span class="text-success label-bold">PASS.</span> The page does not contain any duplicate content
+                    </div>
+                    <button type="button" class="button-link" data-bs-toggle="tooltip" data-bs-placement="left" title="Your webpage's meta title is an HTML tag that defines the title of your page. This tag displays your page title in search engine results, at the top of a user's browser, and also when your page is bookmarked in a list of favorites. A concise, descriptive title tag that accurately reflects your page's topic is important for ranking well in search engines.">
+                      <div class="icon-info"></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- End card custom body -->
+
+            <div class="custom-divider"></div>
+
+            <!-- Card cutom body -->
+            <div class="card-custom-body">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="label-bold d-flex align-items-center">
+                    <div class="icon-x"></div> Duplicate Content
+                  </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="title-status">
+                      <span class="text-danger label-bold">FAIL.</span> The page does not contain any duplicate content
+                    </div>
+                    <button type="button" class="button-link" data-bs-toggle="tooltip" data-bs-placement="left" title="Your webpage's meta title is an HTML tag that defines the title of your page. This tag displays your page title in search engine results, at the top of a user's browser, and also when your page is bookmarked in a list of favorites. A concise, descriptive title tag that accurately reflects your page's topic is important for ranking well in search engines.">
+                      <div class="icon-info"></div>
+                    </button>
+                  </div>
+                  <div class="custom-card-content mb-3">
+                    Either your page is using duplicate content or some other domain is using a content which matches with this page. <a href="#" class="custom-link label-bold">See Details in Copyscape</a>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div></div>
+                    <button class="btn btn-danger btn-rounded">How to fix it</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- End card custom body -->
+
+            <div class="custom-divider"></div>
+
+            <!-- Card cutom body -->
+            <div class="card-custom-body">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="label-bold d-flex align-items-center">
+                    <div class="icon-check"></div> Robots.txt
+                  </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="title-status">
+                      <span class="text-success label-bold">PASS.</span> Your website is using a Robots.txt file and the current page is not being blocked by it
+                    </div>
+                    <button type="button" class="button-link" data-bs-toggle="tooltip" data-bs-placement="left" title="Your webpage's meta title is an HTML tag that defines the title of your page. This tag displays your page title in search engine results, at the top of a user's browser, and also when your page is bookmarked in a list of favorites. A concise, descriptive title tag that accurately reflects your page's topic is important for ranking well in search engines.">
+                      <div class="icon-info"></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- End card custom body -->
+
+            <div class="custom-divider"></div>
+
+            <!-- Card cutom body -->
+            <div class="card-custom-body">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="label-bold d-flex align-items-center">
+                    <div class="icon-x"></div> Robots.txt
+                  </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="title-status">
+                      <span class="text-danger label-bold">FAIL.</span> Your website is not using a Robots.txt file
+                    </div>
+                    <button type="button" class="button-link" data-bs-toggle="tooltip" data-bs-placement="left" title="Your webpage's meta title is an HTML tag that defines the title of your page. This tag displays your page title in search engine results, at the top of a user's browser, and also when your page is bookmarked in a list of favorites. A concise, descriptive title tag that accurately reflects your page's topic is important for ranking well in search engines.">
+                      <div class="icon-info"></div>
+                    </button>
+                  </div>
+                  <div class="custom-card-content mb-3">
+                    While having a Robots.txt file is optional, it is recommended to have a Robots.txt file and control what information is crawled by search engine spiders.
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div></div>
+                    <button class="btn btn-danger btn-rounded">How to fix it</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- End card custom body -->
+
+            <div class="custom-divider"></div>
+
+            <!-- Card cutom body -->
+            <div class="card-custom-body">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="label-bold d-flex align-items-center">
+                    <div class="icon-x"></div> Robots.txt
+                  </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="title-status">
+                      <span class="text-danger label-bold">FAIL.</span> Your website is using a Robots.txt file, but the current page is being blocked by it
+                    </div>
+                    <button type="button" class="button-link" data-bs-toggle="tooltip" data-bs-placement="left" title="Your webpage's meta title is an HTML tag that defines the title of your page. This tag displays your page title in search engine results, at the top of a user's browser, and also when your page is bookmarked in a list of favorites. A concise, descriptive title tag that accurately reflects your page's topic is important for ranking well in search engines.">
+                      <div class="icon-info"></div>
+                    </button>
+                  </div>
+                  <div class="custom-card-content mb-3">
+                    Given below is the content of your <a href="#" class="custom-link">Robots.txt file</a>. The line highlighted in Red is blocking the current page from search engine spiders
+                    <div class="custom-code-view mt-3">
+                      # Allow Googlebot<br>
+                      User-Agent: Googlebot<br>
+                      Allow: /<br>
+                      <span class="text-danger">Disallow: /jsp/</span><br>
+                      Disallow: /demo<br>
+                      Disallow: /stageblog/<br>
+                      # Block Comscore Web Crawler<br>
+                      User-Agent: proximic<br>
+                      Disallow: /<br>
+                      Sitemap: https://www.setmore.com/sitemap.xml
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        This is intentional
+                      </label>
+                    </div>
+                    <button class="btn btn-danger btn-rounded">How to fix it</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- End card custom body -->
+
+            <div class="custom-divider"></div>
+
+            <!-- Card cutom body -->
+            <div class="card-custom-body">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="label-bold d-flex align-items-center">
+                    <div class="icon-x"></div> XML Sitemap
+                  </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="title-status">
+                      <span class="text-danger label-bold">FAIL.</span> Your website is using a Robots.txt file, but the current page is being blocked by it
+                    </div>
+                    <button type="button" class="button-link" data-bs-toggle="tooltip" data-bs-placement="left" title="Your webpage's meta title is an HTML tag that defines the title of your page. This tag displays your page title in search engine results, at the top of a user's browser, and also when your page is bookmarked in a list of favorites. A concise, descriptive title tag that accurately reflects your page's topic is important for ranking well in search engines.">
+                      <div class="icon-info"></div>
+                    </button>
+                  </div>
+                  <div class="custom-card-content mb-3">
+                    <div class="mb-3">
+                      We looked into the root directory of your domain, but could not find the XML Sitemap at <a href="#" class="custom-link">https://www.setmore.com/sitemap.xml</a>
+                    </div>
+                    <div class="mb-3">
+                      If your XML Sitemap is in a different location, please add it below.
+                    </div>
+                    <div class="mb-3 d-flex align-items-center">
+                      <span style="margin-right: 12px;">https://www.setmore.com/</span>
+                      <input style="margin-right: 12px;" type="text" name="" class="input-line">
+                      <button class="btn btn-success btn-sm btn-rounded">Add</button>
+                    </div>
+                    <div class="text-success">XML Sitemap added</div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div></div>
+                    <button class="btn btn-danger btn-rounded">How to fix it</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- End card custom body -->
+          </div>
+
+          <!-- Card custom divider -->
+          <div class="card-custom">
+            <div class="card-custom-header d-flex align-items-center">
+              <h5 class="label-bold no-margin" style="margin-right: 36px">Performance</h5>
+              <div class="progress-item d-flex align-items-center" style="margin-right: 24px">
+                <div class="progress progress-rounded progress-mini" style="margin-right: 12px">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="text-danger">90/100</div>
+              </div>
+            </div>
+
+            <!-- Card cutom body -->
+            <div class="card-custom-body">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="label-bold d-flex align-items-center">
+                    <div class="icon-check"></div> <span>Google Page Speed<br><span style="font-size: 12px;">(Desktop)</span></span>
+                  </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="title-status">
+                      <span class="text-success label-bold">PASS.</span> Google Page Speed Insights Score for Desktop is <span class="text-success">91%</span>
+                    </div>
+                    <div class="left">
+                      <div class="progress-circle-box circle-success" style="margin-right: 24px;">
+                        <svg class="small-circle">
+                          <circle cx="20" cy="20" r="20"></circle>
+                          <circle cx="20" cy="20" r="20"></circle>
+                        </svg>
+                        <div class="progress-description">
+                          <small class="text-center label-bold d-block">80</small>
+                        </div>
+                      </div>
+                      <button type="button" class="button-link" data-bs-toggle="tooltip" data-bs-placement="left" title="Your webpage's meta title is an HTML tag that defines the title of your page. This tag displays your page title in search engine results, at the top of a user's browser, and also when your page is bookmarked in a list of favorites. A concise, descriptive title tag that accurately reflects your page's topic is important for ranking well in search engines.">
+                        <div class="icon-info"></div>
+                      </button>
+                    </div>
+                  </div>
+                  <a href="#" class="custom-link label-bold">Check in google insight tool</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- End card custom body -->
+
+            <div class="custom-divider"></div>
+
+            <!-- Card cutom body -->
+            <div class="card-custom-body">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="label-bold d-flex align-items-center">
+                    <div class="icon-warning"></div> <span>Google Page Speed<br><span style="font-size: 12px;">(Desktop)</span></span>
+                  </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="title-status">
+                      <span class="text-warning label-bold">PASS, but can be improved</span> Google Page Speed Insights Score for Desktop is <span class="text-danger">91%</span>
+                    </div>
+                    <div class="left">
+                      <button type="button" class="button-link" data-bs-toggle="tooltip" data-bs-placement="left" title="Your webpage's meta title is an HTML tag that defines the title of your page. This tag displays your page title in search engine results, at the top of a user's browser, and also when your page is bookmarked in a list of favorites. A concise, descriptive title tag that accurately reflects your page's topic is important for ranking well in search engines.">
+                        <div class="icon-info"></div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <a href="#" class="custom-link label-bold">Check in google insight tool</a>
+                    <div class="d-flex align-items-center">
+                      <div class="progress-circle-box circle-danger" style="margin-right: 24px;">
+                        <svg class="small-circle">
+                          <circle cx="20" cy="20" r="20"></circle>
+                          <circle cx="20" cy="20" r="20"></circle>
+                        </svg>
+                        <div class="progress-description">
+                          <small class="text-center label-bold d-block">80</small>
+                        </div>
+                      </div>
+                      <button class="btn btn-danger btn-rounded">How to fix it</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- End card custom body -->
+
+            <div class="custom-divider"></div>
+
+            <!-- Card cutom body -->
+            <div class="card-custom-body">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="label-bold d-flex align-items-center">
+                    <div class="icon-x"></div> <span>Google Page Speed<br><span style="font-size: 12px;">(Desktop)</span></span>
+                  </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="title-status">
+                      <span class="text-danger label-bold">PASS, but can be improved</span> Google Page Speed Insights Score for Desktop is <span class="text-danger">91%</span>
+                    </div>
+                    <div class="left">
+                      <button type="button" class="button-link" data-bs-toggle="tooltip" data-bs-placement="left" title="Your webpage's meta title is an HTML tag that defines the title of your page. This tag displays your page title in search engine results, at the top of a user's browser, and also when your page is bookmarked in a list of favorites. A concise, descriptive title tag that accurately reflects your page's topic is important for ranking well in search engines.">
+                        <div class="icon-info"></div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <a href="#" class="custom-link label-bold">Check in google insight tool</a>
+                    <div class="d-flex align-items-center">
+                      <div class="progress-circle-box circle-danger" style="margin-right: 24px;">
+                        <svg class="small-circle">
+                          <circle cx="20" cy="20" r="20"></circle>
+                          <circle cx="20" cy="20" r="20"></circle>
+                        </svg>
+                        <div class="progress-description">
+                          <small class="text-center label-bold d-block">80</small>
+                        </div>
+                      </div>
+                      <button class="btn btn-danger btn-rounded">How to fix it</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- End card custom body -->
+
+            <div class="custom-divider"></div>
+
+            <!-- Card cutom body -->
+            <div class="card-custom-body">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="label-bold d-flex align-items-center">
+                    <div class="icon-x"></div> <span>Core Web Vitals<br><span style="font-size: 12px;">(Desktop)</span></span>
+                  </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="title-status">
+                      <span class="text-danger label-bold">FAIL.</span> Core web vitals is meeting minimum quality requirements
+                    </div>
+                    <div class="left">
+                      <button type="button" class="button-link" data-bs-toggle="tooltip" data-bs-placement="left" title="Your webpage's meta title is an HTML tag that defines the title of your page. This tag displays your page title in search engine results, at the top of a user's browser, and also when your page is bookmarked in a list of favorites. A concise, descriptive title tag that accurately reflects your page's topic is important for ranking well in search engines.">
+                        <div class="icon-info"></div>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Progress content -->
+                  <div class="mb-3 pt-5 pb-5 row">
+                    <div class="col-md-3 mb-4 have-border">
+                      <div class="d-flex align-items-center title mb-3">
+                        <span class="label-bold" style="margin-right: 16px;">LCP</span>
+                        <div class="progress-circle-box circle-danger" style="margin-right: 24px;">
+                          <svg class="small-circle">
+                            <circle cx="20" cy="20" r="20"></circle>
+                            <circle cx="20" cy="20" r="20"></circle>
+                          </svg>
+                          <div class="progress-description">
+                            <small class="text-center label-bold d-block">80</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <small>Largest contentful paint</small>
+                        <div class="text-success d-flex"><span style="margin-right: 6px;">0.2</span> <div class="icon-check"></div></div>
+                      </div>
+                    </div>
+
+                    <!-- Divider -->
+
+                    <div class="col-md-3 mb-4 have-border">
+                      <div class="d-flex align-items-center title mb-3">
+                        <span class="label-bold" style="margin-right: 16px;">FID</span>
+                        <div class="progress-circle-box circle-success" style="margin-right: 24px;">
+                          <svg class="small-circle">
+                            <circle cx="20" cy="20" r="20"></circle>
+                            <circle cx="20" cy="20" r="20"></circle>
+                          </svg>
+                          <div class="progress-description">
+                            <small class="text-center label-bold d-block">80</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <small>Largest contentful paint</small>
+                        <div class="text-success d-flex"><span style="margin-right: 6px;">0.2</span> <div class="icon-check"></div></div>
+                      </div>
+                    </div>
+
+                    <!-- Divider -->
+
+                    <div class="col-md-3 mb-4 have-border">
+                      <div class="d-flex align-items-center title mb-3">
+                        <span class="label-bold" style="margin-right: 16px;">CLS</span>
+                        <div class="progress-circle-box circle-success" style="margin-right: 24px;">
+                          <svg class="small-circle">
+                            <circle cx="20" cy="20" r="20"></circle>
+                            <circle cx="20" cy="20" r="20"></circle>
+                          </svg>
+                          <div class="progress-description">
+                            <small class="text-center label-bold d-block">80</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <small>Largest contentful paint</small>
+                        <div class="text-success d-flex"><span style="margin-right: 6px;">0.2</span> <div class="icon-check"></div></div>
+                      </div>
+                    </div>
+
+                    <!-- Divider -->
+
+                    <div class="col-md-3 mb-4">
+                      <div class="d-flex align-items-center title mb-3">
+                        <span class="label-bold" style="margin-right: 16px;">FCP</span>
+                        <div class="progress-circle-box circle-success" style="margin-right: 24px;">
+                          <svg class="small-circle">
+                            <circle cx="20" cy="20" r="20"></circle>
+                            <circle cx="20" cy="20" r="20"></circle>
+                          </svg>
+                          <div class="progress-description">
+                            <small class="text-center label-bold d-block">80</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <small>Largest contentful paint</small>
+                        <div class="text-success d-flex"><span style="margin-right: 6px;">0.2</span> <div class="icon-check"></div></div>
+                      </div>
+                    </div>
+
+                    <!-- Divider -->
+
+                    <div class="col-md-3 mt-4 have-border">
+                      <div class="d-flex align-items-center title mb-3">
+                        <span class="label-bold" style="margin-right: 16px;">TBT</span>
+                        <div class="progress-circle-box circle-success" style="margin-right: 24px;">
+                          <svg class="small-circle">
+                            <circle cx="20" cy="20" r="20"></circle>
+                            <circle cx="20" cy="20" r="20"></circle>
+                          </svg>
+                          <div class="progress-description">
+                            <small class="text-center label-bold d-block">80</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <small>Largest contentful paint</small>
+                        <div class="text-success d-flex"><span style="margin-right: 6px;">0.2</span> <div class="icon-check"></div></div>
+                      </div>
+                    </div>
+
+                    <!-- Divider -->
+
+                    <div class="col-md-3 mt-4 have-border">
+                      <div class="d-flex align-items-center title mb-3">
+                        <span class="label-bold" style="margin-right: 16px;">TTI</span>
+                        <div class="progress-circle-box circle-success" style="margin-right: 24px;">
+                          <svg class="small-circle">
+                            <circle cx="20" cy="20" r="20"></circle>
+                            <circle cx="20" cy="20" r="20"></circle>
+                          </svg>
+                          <div class="progress-description">
+                            <small class="text-center label-bold d-block">80</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <small>Largest contentful paint</small>
+                        <div class="text-success d-flex"><span style="margin-right: 6px;">0.2</span> <div class="icon-check"></div></div>
+                      </div>
+                    </div>
+
+                    <!-- Divider -->
+
+                    <div class="col-md-3 mt-4">
+                      <div class="d-flex align-items-center title mb-3">
+                        <span class="label-bold" style="margin-right: 16px;">SI</span>
+                        <div class="progress-circle-box circle-success" style="margin-right: 24px;">
+                          <svg class="small-circle">
+                            <circle cx="20" cy="20" r="20"></circle>
+                            <circle cx="20" cy="20" r="20"></circle>
+                          </svg>
+                          <div class="progress-description">
+                            <small class="text-center label-bold d-block">80</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <small>Largest contentful paint</small>
+                        <div class="text-success d-flex"><span style="margin-right: 6px;">0.2</span> <div class="icon-check"></div></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-between">
+                    <a href="#" class="custom-link label-bold">Check in google insight tool</a>
+                    <div class="d-flex align-items-center">
+                      <div class="progress-circle-box circle-danger" style="margin-right: 24px;">
+                        <svg class="small-circle">
+                          <circle cx="20" cy="20" r="20"></circle>
+                          <circle cx="20" cy="20" r="20"></circle>
+                        </svg>
+                        <div class="progress-description">
+                          <small class="text-center label-bold d-block">80</small>
+                        </div>
+                      </div>
+                      <button class="btn btn-danger btn-rounded">How to fix it</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- End card custom body -->
+
+            <div class="custom-divider"></div>
+
+            <!-- Card cutom body -->
+            <div class="card-custom-body">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="label-bold d-flex align-items-center">
+                    <div class="icon-check"></div> <span>Lighthouse Audit<br><span style="font-size: 12px;">(Desktop)</span></span>
+                  </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="title-status">
+                      <span class="text-success label-bold">PASS.</span> Lighthouse audit for dekstop is meeting quality reqruirements.
+                    </div>
+                    <div class="left">
+                      <button type="button" class="button-link" data-bs-toggle="tooltip" data-bs-placement="left" title="Your webpage's meta title is an HTML tag that defines the title of your page. This tag displays your page title in search engine results, at the top of a user's browser, and also when your page is bookmarked in a list of favorites. A concise, descriptive title tag that accurately reflects your page's topic is important for ranking well in search engines.">
+                        <div class="icon-info"></div>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Progress content -->
+                  <div class="mb-3 pt-5 pb-5 row">
+                    <div class="col-md-3 mb-4 have-border">
+                      <div class="d-flex align-items-center title mb-3">
+                        <span class="label-bold" style="margin-right: 16px;">Performance</span>
+                        <div class="progress-circle-box circle-success" style="margin-right: 24px;">
+                          <svg class="small-circle">
+                            <circle cx="20" cy="20" r="20"></circle>
+                            <circle cx="20" cy="20" r="20"></circle>
+                          </svg>
+                          <div class="progress-description">
+                            <small class="text-center label-bold d-block">80</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <small>Largest contentful paint</small>
+                        <div class="text-success d-flex"><span style="margin-right: 6px;">0.2</span> <div class="icon-check"></div></div>
+                      </div>
+                    </div>
+
+                    <!-- Divider -->
+
+                    <div class="col-md-3 mb-4 have-border">
+                      <div class="d-flex align-items-center title mb-3">
+                        <span class="label-bold" style="margin-right: 16px;">Accesibility</span>
+                        <div class="progress-circle-box circle-success" style="margin-right: 24px;">
+                          <svg class="small-circle">
+                            <circle cx="20" cy="20" r="20"></circle>
+                            <circle cx="20" cy="20" r="20"></circle>
+                          </svg>
+                          <div class="progress-description">
+                            <small class="text-center label-bold d-block">80</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <small>Largest contentful paint</small>
+                        <div class="text-success d-flex"><span style="margin-right: 6px;">0.2</span> <div class="icon-check"></div></div>
+                      </div>
+                    </div>
+
+                    <!-- Divider -->
+
+                    <div class="col-md-3 mb-4 have-border">
+                      <div class="d-flex align-items-center title mb-3">
+                        <span class="label-bold" style="margin-right: 16px;">Best Practice</span>
+                        <div class="progress-circle-box circle-success" style="margin-right: 24px;">
+                          <svg class="small-circle">
+                            <circle cx="20" cy="20" r="20"></circle>
+                            <circle cx="20" cy="20" r="20"></circle>
+                          </svg>
+                          <div class="progress-description">
+                            <small class="text-center label-bold d-block">80</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <small>Largest contentful paint</small>
+                        <div class="text-success d-flex"><span style="margin-right: 6px;">0.2</span> <div class="icon-check"></div></div>
+                      </div>
+                    </div>
+
+                    <!-- Divider -->
+
+                    <div class="col-md-3 mb-4">
+                      <div class="d-flex align-items-center title mb-3">
+                        <span class="label-bold" style="margin-right: 16px;">SEO</span>
+                        <div class="progress-circle-box circle-success" style="margin-right: 24px;">
+                          <svg class="small-circle">
+                            <circle cx="20" cy="20" r="20"></circle>
+                            <circle cx="20" cy="20" r="20"></circle>
+                          </svg>
+                          <div class="progress-description">
+                            <small class="text-center label-bold d-block">80</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <small>Largest contentful paint</small>
+                        <div class="text-success d-flex"><span style="margin-right: 6px;">0.2</span> <div class="icon-check"></div></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row align-items-center justify-content-between mb-3">
+                    <div class="col-md-4">
+                      <a href="#" class="custom-link label-bold">Check in google insight tool</a>
+                    </div>
+                    
+                    <div class="col-md-8 d-flex align-items-center">
+                      <div style="margin-right: 24px;">Score Scale</div>
+                      <div class="progress-group d-flex align-items-center" style="margin-right: 24px;">
+                        <div class="progress progress-rounded progress-mini" style="margin-right: 10px;">
+                          <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span>0-49</span>
+                      </div>
+                      <div class="progress-group d-flex align-items-center" style="margin-right: 24px;">
+                        <div class="progress progress-rounded progress-mini" style="margin-right: 10px;">
+                          <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span>50-89</span>
+                      </div>
+                      <div class="progress-group d-flex align-items-center" style="margin-right: 24px;">
+                        <div class="progress progress-rounded progress-mini" style="margin-right: 10px;">
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span>90-100</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div></div>
+                    <button class="btn btn-danger btn-rounded">How to fix it</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- End card custom body -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+
+  </body>
+</html>
