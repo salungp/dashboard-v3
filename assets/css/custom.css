@@ -460,9 +460,18 @@ body {
 		margin-left: 0;
 	}
 
+	.content-inner {
+		padding: 20px 15px;
+	}
+
 	.content-header {
 		left: 0;
 		width: 100%;
+		padding: 0 15px;
+	}
+
+	.card-custom {
+		margin-bottom: 18px;
 	}
 
 	.sidebar-active {
