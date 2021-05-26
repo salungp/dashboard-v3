@@ -279,6 +279,8 @@ body {
 	font-weight: 600;
 }
 
+/* Custom class to modify the circle progress */
+
 .big-circle {
 	position: relative;
 	width: 150px;
@@ -335,6 +337,7 @@ body {
 	stroke: #1567D3;
 }
 
+
 .circle-success svg circle:nth-child(2) {
 	stroke: #27AE60;
 }
@@ -385,14 +388,6 @@ body {
 	border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
-.no-margin {
-	margin: 0;
-}
-
-.no-padding {
-	padding: 0;
-}
-
 .progress-mini {
 	width: 80px;
 }
@@ -401,10 +396,6 @@ body {
 	border-radius: 8px;
 	background: #F3F3F6;
 	padding: 15px;
-}
-
-.sub-text {
-	font-size: 14px;
 }
 
 .custom-divider	 {
@@ -420,6 +411,8 @@ body {
 	line-height: 30px;
 }
 
+/* Custom input line */
+
 .input-line {
 	padding: 6px 0;
 	border: none;
@@ -432,9 +425,13 @@ body {
 	border-color: rgba(0,0,0,.5);
 }
 
+/* Add trantition in the sidebar toggle action */
+
 .sidebar, .content, .content-header {
 	transition: .3s ease-in-out;
 }
+
+/* Group class if sidebar toggle button clicked */
 
 .sidebar-active {
 	left: -6%;
@@ -449,6 +446,8 @@ body {
 	left: 0;
 	width: 100%;
 }
+
+/* Condition if in the mobile size */
 
 @media (max-width: 768px) {
 	.sidebar {
@@ -514,6 +513,14 @@ body {
 	margin-right: 30px;
 }
 
+.no-margin {
+	margin: 0;
+}
+
+.no-padding {
+	padding: 0;
+}
+
 /* custom font size */
 .f-big {
 	font-size: 36px;
@@ -529,4 +536,8 @@ body {
 
 .f-small {
 	font-size: 12px;
+}
+
+.sub-text {
+	font-size: 14px;
 }
