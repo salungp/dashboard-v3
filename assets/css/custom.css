@@ -562,4 +562,8 @@ body {
 	.progress-group div {
 		font-size: 12px;
 	}
+
+	.rm-mobile {
+		margin-right: 15px;
+	}
 }
