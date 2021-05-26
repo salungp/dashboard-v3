@@ -447,57 +447,6 @@ body {
 	width: 100%;
 }
 
-/* Condition if in the mobile size */
-
-@media (max-width: 768px) {
-	.sidebar {
-		left: -80px;
-		width: 80px;
-	}
-
-	.content {
-		width: 100%;
-		margin-left: 0;
-	}
-
-	.content-inner {
-		padding: 20px 15px;
-	}
-
-	.content-header {
-		left: 0;
-		width: 100%;
-		padding: 0 15px;
-	}
-
-	.card-custom {
-		margin-bottom: 18px;
-	}
-
-	.sidebar-active {
-		left: 0;
-	}
-
-	.content-active {
-		margin-left: 80px;
-	}
-
-	.content-header-active {
-		left: 80px;
-	}
-
-	.progress-mini {
-		width: 60px;
-	}
-
-	.input-line {
-		width: 30px;
-	}
-
-	body {
-		overflow-x: hidden;
-	}
-}
 
 /* give border to performance element */
 
@@ -549,4 +498,68 @@ body {
 
 .sub-text {
 	font-size: 14px;
+}
+
+/* Condition if in the mobile size */
+
+@media (max-width: 768px) {
+	.sidebar {
+		left: -80px;
+		width: 80px;
+	}
+
+	.content {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.content-inner {
+		padding: 20px 15px;
+	}
+
+	.content-header {
+		left: 0;
+		width: 100%;
+		padding: 0 15px;
+	}
+
+	.card-custom {
+		margin-bottom: 18px;
+	}
+
+	.sidebar-active {
+		left: 0;
+	}
+
+	.content-active {
+		margin-left: 80px;
+	}
+
+	.content-header-active {
+		left: 80px;
+	}
+
+	.progress-mini {
+		width: 60px;
+	}
+
+	.input-line {
+		width: 30px;
+	}
+
+	body {
+		overflow-x: hidden;
+	}
+
+	.have-border {
+		border: none;
+	}
+
+	.progress-group span {
+		font-size: 12px;
+	}
+
+	.progress-group div {
+		font-size: 12px;
+	}
 }
