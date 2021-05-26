@@ -491,6 +491,42 @@ body {
 	}
 }
 
+/* give border to performance element */
+
 .have-border {
 	border-right: 1px solid rgba(0,0,0,.1);
+}
+
+/* custom margin class */
+.mr-24 {
+	margin-right: 24px;
+}
+
+.mr-16 {
+	margin-right: 16px;
+}
+
+.mr-10 {
+	margin-right: 10px;
+}
+
+.mr-30 {
+	margin-right: 30px;
+}
+
+/* custom font size */
+.f-big {
+	font-size: 36px;
+}
+
+.f-med {
+	font-size: 24px;
+}
+
+.f-body {
+	font-size: 16px;
+}
+
+.f-small {
+	font-size: 12px;
 }
