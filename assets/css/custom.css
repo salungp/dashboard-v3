@@ -92,36 +92,70 @@ body {
 	width: 24px;
 	height: 24px;
 	background-image: url(../icons/ic_home_active.svg);
+	background-position: center;
+}
+
+.icon-profile-active {
+	width: 24px;
+	height: 24px;
+	background-image: url(../icons/ic_profile_active.svg);
+	background-position: center;
+}
+
+.icon-settings-active {
+	width: 24px;
+	height: 24px;
+	background-image: url(../icons/ic_settings_active.svg);
+	background-position: center;
+}
+
+.icon-home {
+	width: 24px;
+	height: 24px;
+	background-image: url(../icons/ic_home.svg);
+	background-position: center;
+}
+
+.icon-project-active {
+	width: 24px;
+	height: 24px;
+	background-image: url(../icons/ic_project_active.svg);
+	background-position: center;
 }
 
 .icon-project {
 	width: 24px;
 	height: 24px;
 	background-image: url(../icons/ic_project.svg);
+	background-position: center;
 }
 
 .icon-profile {
 	width: 24px;
 	height: 24px;
 	background-image: url(../icons/ic_profile.svg);
+	background-position: center;
 }
 
 .icon-qa {
 	width: 24px;
 	height: 24px;
 	background-image: url(../icons/ic_QAPage.svg);
+	background-position: center;
 }
 
 .icon-settings {
 	width: 24px;
 	height: 24px;
 	background-image: url(../icons/ic_settings.svg);
+	background-position: center;
 }
 
 .icon-logout {
 	width: 24px;
 	height: 24px;
 	background-image: url(../icons/ic_logout.svg);
+	background-position: center;
 }
 
 .icon-folder {
@@ -130,6 +164,7 @@ body {
 	background-image: url(../icons/ic_folder.svg);
 	display: inline-block;
 	margin-right: 8px;
+	background-position: center;
 }
 
 .icon-toggle {
@@ -153,6 +188,7 @@ body {
 	background-image: url(../icons/x.svg);
 	background-repeat: no-repeat;
 	margin-right: 8px;
+	background-position: center;
 }
 
 .icon-warning {
@@ -161,6 +197,7 @@ body {
 	background-image: url(../icons/warning.svg);
 	background-repeat: no-repeat;
 	margin-right: 8px;
+	background-position: center;
 }
 
 .icon-info {
@@ -168,6 +205,7 @@ body {
 	height: 22px;
 	background-image: url(../icons/info.svg);
 	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .icon-setting-black {
