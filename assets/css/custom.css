@@ -170,6 +170,27 @@ body {
 	background-repeat: no-repeat;
 }
 
+.icon-setting-black {
+	width: 22px;
+	height: 22px;
+	background-image: url(../icons/setting_black.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-trash {
+	width: 22px;
+	height: 22px;
+	background-image: url(../icons/trash.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.btn-clear {
+	border: none;
+	background: transparent;
+}
+
 .excel-icon {
 	width: 30px;
 	height: 30px;
@@ -507,6 +528,11 @@ body {
 
 .h-400 {
 	height: 260px;
+}
+
+.custom-badge-danger {
+	color: #EB5757;
+	background: rgba(235, 87, 87, 0.1);
 }
 
 /* Condition if in the mobile size */
