@@ -209,7 +209,7 @@ body {
 	position: fixed;
 	top: 0;
 	left: 6%;
-	z-index: 9999;
+	z-index: 9;
 	box-shadow: 0 3px 12px rgba(0,0,0,.05);
 }
 
@@ -498,6 +498,15 @@ body {
 
 .sub-text {
 	font-size: 14px;
+}
+
+.modal-custom {
+	border-radius: 10px;
+	border: none;
+}
+
+.h-400 {
+	height: 260px;
 }
 
 /* Condition if in the mobile size */

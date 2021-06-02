@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+
+    <!-- Profile CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/profile.css">
+
+    <title>Mona Dashboard</title>
+  </head>
+  <body>
+    <div class="content-wrapper d-flex">
+      <div class="sidebar">
+        <a class="sidebar-logo" href="#">
+          <img src="assets/img/logo-dashboard.png" alt="Logo">
+        </a>
+        <div class="d-flex justify-content-center">
+          <button class="add-project-button">
+            <div class="icon-plus"></div>
+          </button>
+        </div>
+        <div class="sidebar-menu">
+          <a class="sidebar-link" href="#">
+            <div class="icon-home"></div>
+          </a>
+          <a class="sidebar-link" href="#">
+            <div class="icon-project"></div>
+          </a>
+          <a class="sidebar-link" href="#">
+            <div class="icon-profile-active"></div>
+          </a>
+          <a class="sidebar-link" href="#">
+            <div class="icon-qa"></div>
+          </a>
+          <a class="sidebar-link" href="#">
+            <div class="icon-settings"></div>
+          </a>
+          <a class="sidebar-link drop-bottom" href="#">
+            <div class="icon-logout"></div>
+          </a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-header">
+          <button class="button-toggle">
+            <div class="icon-toggle"></div>
+          </button>
+          <div class="content-header-right d-flex align-items-center">
+            <div class="dropdown">
+              <button class="btn mr-24 rm-mobile" type="button" id="myprojects" data-bs-toggle="dropdown" aria-expanded="false">
+                My Projects
+              </button>
+              <ul class="dropdown-menu dropdown-menu-custom" aria-labelledby="myprojects">
+                <li><a class="dropdown-item" href="#">Project 1</a></li>
+                <li><a class="dropdown-item" href="#">Project 2</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Create new project</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item d-inline-flex align-items-center" href="#"><div class="icon-folder"></div> My Project</a></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-outline-secondary dropdown-toggle rounded-ten" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                jhon@example.com
+              </button>
+              <ul class="dropdown-menu dropdown-menu dropdown-menu-custom" aria-labelledby="dropdownMenuButton2">
+                <li><a class="dropdown-item active" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- content -->
+        <div class="content-inner">
+
+          <div class="content-inner-header">
+            <h2 class="content-title">Profile</h2>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="card-body py-5">
+                  <div class="row">
+                    <div class="col-5 col-md-3 text-end">
+                      <p class="mt-2">Full Name</p>
+                      <p class="mt-4">Email Address</p>
+                      <p class="mt-4">Phone Number</p>
+                    </div>
+                    <div class="col">
+                      <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="User Name" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group mb-3">
+                        <input class="form-control" type="text" placeholder="user.email.com" aria-label="Disabled input example" disabled readonly>
+                      </div>
+                      <div class="input-group mb-3">
+                        <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                          <option selected>+62</option>
+                          <option value="1">+62</option>
+                          <option value="2">+62</option>
+                          <option value="3">+62</option>
+                        </select>
+                        <input type="number" class="form-control" aria-label="Username" aria-describedby="basic-addon1" value="8978978909">
+                      </div>
+                      <div class="row">
+                        <div class="col d-sm-block d-md-none"></div>
+                        <div class="col-auto">
+                          <button type="button" class="btn btn-rounded btn-custom">Update Profile</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 d-none d-md-block"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-inner-header mt-4">
+            <h2 class="content-title">Update Password</h2>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="card-body py-5">
+                  <div class="row">
+                    <div class="col-5 col-md-3 text-end">
+                      <p class="mt-2">Current Password</p>
+                      <p class="mt-4">New Password</p>
+                      <p class="mt-4">Confirm Password</p>
+                    </div>
+                    <div class="col">
+                      <div class="input-group mb-3">
+                        <input type="password" class="form-control is-invalid" aria-label="Password" aria-describedby="basic-addon1">
+                        <div id="validationServer03Feedback" class="invalid-feedback">
+                          Wrong password, please try again
+                        </div>
+                      </div>
+                      <div class="input-group mb-3">
+                        <input type="password" class="form-control" aria-label="Password" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group mb-3">
+                        <input type="password" class="form-control is-invalid" aria-label="Password" aria-describedby="basic-addon1">
+                        <div id="validationServer03Feedback" class="invalid-feedback">
+                          Passwords do not match
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col d-sm-block d-md-none"></div>
+                        <div class="col-auto">
+                          <button type="button" class="btn btn-rounded btn-custom">Update Password</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 d-none d-md-block"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-inner-header mt-4">
+            <h2 class="content-title">Delete Account</h2>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="card-body py-5 px-4">
+                  <div class="card-alert">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-auto">
+                          <div class="alert-icon text-end">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <h5 class="alert-title">Please Note</h5>
+                          <p class="text-alert">After deleting your account, you will to be able to use our service: your subscription will be canceled and your conten, saved reports and other personal information will be erased.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-delete">Delete Account</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+
+  </body>
+</html>

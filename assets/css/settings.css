@@ -1,0 +1,80 @@
+.card-list{
+	border-radius: 5px;
+	background: #ffffff;
+	width: 100%;
+	min-height: 200px;
+	border-bottom: 30px;
+	margin-bottom: 30px;
+	padding: 21px 0;
+
+}
+.list-item{
+	height: 45px;
+	width: 100%;
+	border: 0;
+	background: #ffffff;
+	color: #7B8CA4;
+	padding: 0 30px;
+	font-size: 16px;
+}
+.list-item:hover{
+	background: rgba(26, 115, 232, 0.05);
+}
+.active{
+	background: #1A73E8;
+	color: #FFFFFF;
+}
+.active:hover{
+	background: #1A73E8;
+}
+.card-collapse{
+	border-radius: 5px;
+	background: #ffffff;
+	width: 100%;
+	min-height: 200px;
+
+}
+.text-line {
+    background-color: transparent;
+    color: #363853;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #363853 1px;
+    width:45px;
+    height: 18px;
+}
+.check-margin{
+	margin-bottom: 18px;
+}
+.btn-orange{	
+	border-radius: 8px;
+	background: rgba(255, 138, 0, 0.12);
+	color: #FF8A00;
+	margin-right: 10px;
+}
+.btn-orange:hover{
+	color: #FF8A00;
+	background: rgba(255, 138, 0, 0.3);
+
+}
+.bg-switch{
+	background-color: #EB5757;
+}
+.bg-switch:checked{
+	background-color: #27AE60;
+	border-color: #27AE60;
+}
+.m-switch{
+	margin-right: 24px;
+}
+
+.p-accordion{
+	padding: 16px 30px;
+	color: #142640;
+}
+.p-body{
+	padding: 30px;
+}

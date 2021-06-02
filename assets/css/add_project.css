@@ -1,0 +1,12 @@
+.card-custom-body {
+	padding: 30px 30px 72px 30px;
+}
+.btn-grey{
+	border-radius: 8px;
+	background: #EBEBEF;
+	color: #4D4E5D;
+}
+.btn-grey:hover {
+	background: #d2d2d6;
+	color: #4D4E5D;
+}
