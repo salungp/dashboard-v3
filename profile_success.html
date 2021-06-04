@@ -93,34 +93,34 @@
           </div>
           <div class="row">
             <div class="col">
-              <div class="card">
+              <div class="card-custom">
                 <div class="card-body py-5">
                   <div class="row">
-                    <div class="col-5 col-md-3 text-end">
+                    <div class="col-5 col-md-3 text-end label-custom">
                       <p class="mt-2">Full Name</p>
                       <p class="mt-4">Email Address</p>
                       <p class="mt-4">Phone Number</p>
                     </div>
                     <div class="col">
                       <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="User Name" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="text" class="form-control custom-input" id="username" name="username" placeholder="User Name" aria-label="Username" aria-describedby="basic-addon1">
                       </div>
                       <div class="input-group mb-3">
-                        <input class="form-control" type="text" placeholder="user.email.com" aria-label="Disabled input example" disabled readonly>
+                        <input class="form-control custom-input" id="email_address" name="email_address" type="text" placeholder="user.email.com" aria-label="Disabled input example" disabled readonly>
                       </div>
                       <div class="input-group mb-3">
-                        <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                        <select class="form-select" id="number_phone_country" name="number_phone_country" aria-label="Example select with button addon">
                           <option selected>+62</option>
                           <option value="1">+62</option>
                           <option value="2">+62</option>
                           <option value="3">+62</option>
                         </select>
-                        <input type="number" class="form-control" aria-label="Username" aria-describedby="basic-addon1" value="8978978909">
+                        <input type="number" id="number_phone" name="number_phone" class="form-control" aria-label="Username" aria-describedby="basic-addon1" value="8978978909">
                       </div>
                       <div class="row">
                         <div class="col d-sm-block d-md-none"></div>
                         <div class="col-auto">
-                          <button type="button" class="btn btn-rounded btn-custom">Update Profile</button>
+                          <button type="button" class="btn btn-orange">Update Profile</button>
                         </div>
                       </div>
                     </div>
@@ -136,28 +136,28 @@
           </div>
           <div class="row">
             <div class="col">
-              <div class="card">
+              <div class="card-custom">
                 <div class="card-body py-5">
                   <div class="row">
-                    <div class="col-5 col-md-3 text-end">
+                    <div class="col-5 col-md-3 text-end label-custom">
                       <p class="mt-2">Current Password</p>
                       <p class="mt-4">New Password</p>
                       <p class="mt-4">Confirm Password</p>
                     </div>
                     <div class="col">
                       <div class="input-group mb-3">
-                        <input type="password" class="form-control" aria-label="Password" aria-describedby="basic-addon1">
+                        <input type="password" class="form-control" id="current_password" name="current_password" aria-label="Password" aria-describedby="basic-addon1">
                       </div>
                       <div class="input-group mb-3">
-                        <input type="password" class="form-control" aria-label="Password" aria-describedby="basic-addon1">
+                        <input type="password" class="form-control" id="new_password" name="new_password" aria-label="Password" aria-describedby="basic-addon1">
                       </div>
                       <div class="input-group mb-3">
-                        <input type="password" class="form-control" aria-label="Password" aria-describedby="basic-addon1">
+                        <input type="password" class="form-control" id="confirm_password" name="confirm_password" aria-label="Password" aria-describedby="basic-addon1">
                       </div>
                       <div class="row">
                         <div class="col d-sm-block d-md-none"></div>
                         <div class="col-auto">
-                          <button type="button" class="btn btn-rounded btn-custom">Update Password</button>
+                          <button type="button" class="btn btn-orange">Update Password</button>
                         </div>
                       </div>
                     </div>
@@ -173,7 +173,7 @@
           </div>
           <div class="row">
             <div class="col">
-              <div class="card">
+              <div class="card-custom">
                 <div class="card-body py-5 px-4">
                   <div class="card-alert">
                     <div class="card-body">
@@ -192,7 +192,7 @@
                       </div>
                     </div>
                   </div>
-                  <button class="btn btn-delete">Delete Account</button>
+                  <button class="btn btn-delete" data-bs-toggle="modal" data-bs-target="#delete_modal">Delete Account</button>
                 </div>
               </div>
             </div>
@@ -202,6 +202,76 @@
         </div>
       </div>
     </div>
+
+<!-- Modal -->
+<div class="modal fade" id="delete_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content modal-custom">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Delete Account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5 class="label-bold mb-3">Why are you leaving?</h5>
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            It was too costly
+          </label>
+        </div>
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+          <label class="form-check-label" for="flexRadioDefault2">
+            Needed more feature
+          </label>
+        </div>
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+          <label class="form-check-label" for="flexRadioDefault3">
+            It was to complicated to use
+          </label>
+        </div>
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+          <label class="form-check-label" for="flexRadioDefault4">
+            I am using another search engine analyzer
+          </label>
+        </div>
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+          <label class="form-check-label" for="flexRadioDefault5">
+            Customer support was low
+          </label>
+        </div>
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
+          <label class="form-check-label" for="flexRadioDefault6">
+            There where technincal issues
+          </label>
+        </div>
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault7">
+          <label class="form-check-label" for="flexRadioDefault7">
+            It is not main serving my main purpose
+          </label>
+        </div>
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault8">
+          <label class="form-check-label" for="flexRadioDefault8">
+            I have another reason
+          </label>
+        </div>
+
+        <h5 class="label-bold mb-3">Custom Message</h5>
+        <textarea class="form-control custom-input" placeholder=""></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-rounded btn-light" data-bs-dismiss="modal">Not sure about this</button>
+        <button type="button" class="btn btn-custom btn-orange">Delete Account</button>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

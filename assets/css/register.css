@@ -2,10 +2,143 @@ body{
 	background: #F4F6FB;
 	font-family: poppins;
 }
-.card{
-	box-shadow: 0px 6px 49px rgba(137, 140, 176, 0.1);
+.my-header{
+	margin-top: 40px;
+	margin-bottom: 89px;
 }
-.priv{
+.logo{
+	width: 93px;
+}
+.text-phone{
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.02em;
+	color: #4D4E5D;
+}
+.btn-login{
+	padding: 9px 37px;
+	border: 1px solid #1A73E8;
+	box-sizing: border-box;
+	border-radius: 6px;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: -0.02em;
+	color: #1A73E8;
+	margin-left: 30px;
+}
+.btn-login:hover{
+	background: #1A73E8;
+	color: #ffffff;
+}
+.text-analyze{
+	margin-top: 55px;
+	margin-bottom: 60px;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 72px;
+	text-transform: capitalize;
+	color: #142640;
+}
+.img-custom{
+	width: 605px;
+	border-radius: 12px;
+}
+.card-custom{
+	width: 471px;
+	background: #FFFFFF;
+	box-shadow: 0px 6px 49px rgba(137, 140, 176, 0.1);
+	border-radius: 6px;
+	margin-bottom: 135px;
+}
+.card-body-custom{
+	padding: 50px 66px 72px 67px;
+}
+.title-custom{
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 36px;
+	letter-spacing: -0.02em;
+	color: #142640;
+	margin-bottom: 28px;
+}
+.divider{
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: -0.02em;
+	color: #888888;
+	margin-bottom: 16px;
+}
+.label-custom{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	color: #142640;
+	margin-bottom: 10px;
+}
+.invalid{
+	border: 1.4px solid #EB5757;
+	box-sizing: border-box;
+	border-radius: 6px;
+	margin-bottom: 8px;
+}
+.feedback{
+	font-size: 12px;
+	line-height: 18px;
+	color: #EB5757;
+}
+.text-by{
 	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: -0.02em;
 	color: rgba(0, 0, 0, 0.52);
+}
+.h-5{
+	height: 50px;
+}
+.fs{
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.02em;
+	color: #142640;
+}
+.mb-28{
+	margin-bottom: 28px;
+}
+.mb-24{
+	margin-bottom: 24px;
+}
+.mb-18{
+	margin-bottom: 18px;
+}
+
+@media (max-width: 768px) {
+	.my-header{
+		margin-bottom: 48px;
+	}
+	.logo{
+		width: 67px;
+	}
+	.text-phone{
+		font-size: 12px;
+		line-height: 18px;
+	}
+	.btn-login{
+		padding: 9px 25px;
+		margin-left: 20px;
+		
+	}
+	.text-analyze{
+		font-size: 24px;
+		line-height: 36px;
+		margin-top: 0;
+		margin-bottom: 48px;
+	}
+	.card-custom{
+		width: auto;
+		margin-bottom: 61px;
+	}
+	.card-body-custom{
+		padding: 50px 32px 99px 30px;
+	}
 }

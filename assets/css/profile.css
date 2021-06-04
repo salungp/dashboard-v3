@@ -1,3 +1,35 @@
+.card-custom{
+	background: #FFFFFF;
+	border-radius: 5px;
+}
+.label-custom{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.02em;
+	color: #363853;
+}
+.btn-orange{
+	background: #FF8A00;
+	border-radius: 8px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: -0.02em;
+	color: #FFFFFF;
+}
+.invalid{
+	border: 1px solid #EB5757;
+	box-sizing: border-box;
+	border-radius: 8px;
+	margin-bottom: 8px;
+}
+.feedback{
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: -0.02em;
+	color: #EB5757;
+}
 .card-alert{
 	background: rgba(235, 87, 87, 0.12);
 	border: 1px solid #EB5757;

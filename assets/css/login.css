@@ -2,10 +2,84 @@ body{
   background: #F4F6FB;
   font-family: poppins;
 }
-.card{
+.my-header{
+	margin-top: 40px;
+	margin-bottom: 89px;
+}
+.logo{
+	width: 93px;
+}
+.text-link{
+	font-size: 18px;
+	letter-spacing: -0.02em;
+	color: #4D4E5D;
+}
+.card-custom{
+	width: 471px;
+	background: #FFFFFF;
 	box-shadow: 0px 6px 49px rgba(137, 140, 176, 0.1);
+	border-radius: 6px;
+	margin-bottom: 40px;
+}
+.card-body-custom{
+	padding: 50px 66px 51px 67px;
+}
+.title-custom{
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 54px;
+	letter-spacing: -0.02em;
+	color: #142640;
+	margin-bottom: 28px;
 }
 .priv{
+	line-height: 24px;
+	letter-spacing: -0.02em;
 	font-size: 14px;
 	color: rgba(0, 0, 0, 0.52);
+}
+.text-color{
+	color: #888888;
+}
+
+.mb-28{
+	margin-bottom: 28px;
+}
+.mb-24{
+	margin-bottom: 24px;
+}
+.mb-18{
+	margin-bottom: 18px;
+}
+
+.invalid{
+	border: 1.4px solid #EB5757;
+	margin-bottom: 8px;
+}
+.feedback{
+	font-size: 12px;
+	line-height: 18px;
+	color: #EB5757;
+}
+
+.h-5{
+	height: 50px;
+}
+
+@media (max-width: 768px) {
+	.my-header{
+		margin-bottom: 36px;
+	}
+	.logo{
+		width: 67px;
+	}
+	.text-link{
+		font-size: 14px;
+	}
+	.card-custom{
+		width: auto;
+	}
+	.card-body-custom{
+		padding: 50px 31px 44px 31px;
+	}
 }
