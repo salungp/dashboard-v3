@@ -530,6 +530,10 @@ body {
 	margin-right: 30px;
 }
 
+.mb-0{
+	margin-bottom: 0;
+}
+
 .no-margin {
 	margin: 0;
 }

@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+
+    <!-- Settings CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/settings.css">
+
+    <title>Mona Dashboard</title>
+  </head>
+  <body>
+    <div class="content-wrapper d-flex">
+      <div class="sidebar">
+        <a class="sidebar-logo" href="#">
+          <img src="assets/img/logo-dashboard.png" alt="Logo">
+        </a>
+        <div class="d-flex justify-content-center">
+          <button class="add-project-button">
+            <div class="icon-plus"></div>
+          </button>
+        </div>
+        <div class="sidebar-menu">
+          <a class="sidebar-link" href="#">
+            <div class="icon-home-active"></div>
+          </a>
+          <a class="sidebar-link" href="#">
+            <div class="icon-project"></div>
+          </a>
+          <a class="sidebar-link" href="#">
+            <div class="icon-profile"></div>
+          </a>
+          <a class="sidebar-link" href="#">
+            <div class="icon-qa"></div>
+          </a>
+          <a class="sidebar-link" href="#">
+            <div class="icon-settings"></div>
+          </a>
+          <a class="sidebar-link drop-bottom" href="#">
+            <div class="icon-logout"></div>
+          </a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-header">
+          <button class="button-toggle">
+            <div class="icon-toggle"></div>
+          </button>
+          <div class="content-header-right d-flex align-items-center">
+            <div class="dropdown">
+              <button class="btn mr-24 rm-mobile" type="button" id="myprojects" data-bs-toggle="dropdown" aria-expanded="false">
+                My Projects
+              </button>
+              <ul class="dropdown-menu dropdown-menu-custom" aria-labelledby="myprojects">
+                <li><a class="dropdown-item" href="#">Project 1</a></li>
+                <li><a class="dropdown-item" href="#">Project 2</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Create new project</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item d-inline-flex align-items-center" href="#"><div class="icon-folder"></div> My Project</a></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-outline-secondary dropdown-toggle rounded-ten" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                jhon@example.com
+              </button>
+              <ul class="dropdown-menu dropdown-menu dropdown-menu-custom" aria-labelledby="dropdownMenuButton2">
+                <li><a class="dropdown-item active" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- content -->
+        <div class="content-inner">
+          <div class="content-inner-header">
+            <div class="row">
+              <div class="col">
+                <h2 class="content-title">Settings</h2>
+              </div>
+              <div class="col-auto">
+                <button type="button" class="btn btn-orange">Discard Changes</button>                
+                <button type="button" class="btn btn-custom">Save settings</button>                
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card-list">
+                <a href="#">
+                  <button type="button" class="list-item active text-start">Meta tags</button>
+                </a>
+                <a href="#">
+                  <button type="button" class="list-item text-start">Images</button>
+                </a>
+                <a href="#">
+                  <button type="button" class="list-item text-start">Other Check</button>
+                </a>
+                <a href="#">
+                  <button type="button" class="list-item text-start">Performance</button>
+                </a>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="card-collapse">
+
+                <div class="accordion" id="accordionExample">
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                        Meta title tag
+                        <div class="flex-grow-1"></div>
+                        <div class="form-check form-switch m-switch">
+                          <input class="form-check-input bg-switch" type="checkbox" id="flexSwitchCheckChecked" checked>
+                          <label class="form-check-label" for="flexSwitchCheckChecked">on</label>
+                        </div>
+                      </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body p-body">
+                        
+                        <div class="form-check check-margin">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">Maximum length of Title tag should be <input type="number" class="text-line" /> Characters</label>
+                        </div>
+                        <div class="form-check check-margin">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">Maximum length of Title tag should be <input type="number" class="text-line" /> Characters</label>
+                        </div>
+                        <div class="form-check check-margin">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">Title Tag must not be equal to H1 heading tag</label>
+                        </div>
+                        <div class="form-check check-margin">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">Title Tag must be either in camel casing or sentence casing</label>
+                        </div>
+                        <div class="form-check check-margin">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">Title Tag must be in camel casing</label>
+                        </div>
+                        <div class="form-check check-margin">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">Title Tag must be in sentence casing</label>
+                        </div>
+                        <div class="form-check check-margin">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">Exclude specific words from casing checks (separate each word with a comma)</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                        Meta description
+                        <div class="flex-grow-1"></div>
+                        <div class="form-check form-switch m-switch">
+                          <input class="form-check-input bg-switch" type="checkbox" id="flexSwitchCheckChecked" checked>
+                          <label class="form-check-label" for="flexSwitchCheckChecked">on</label>
+                        </div>
+                      </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body p-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                        Robots Meta Tag
+                        <div class="flex-grow-1"></div>
+                        <div class="form-check form-switch m-switch">
+                          <input class="form-check-input bg-switch" type="checkbox" id="flexSwitchCheckChecked" checked>
+                          <label class="form-check-label" for="flexSwitchCheckChecked">on</label>
+                        </div>
+                      </button>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body p-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                        Canonical URL
+                        <div class="flex-grow-1"></div>
+                        <div class="form-check form-switch m-switch">
+                          <input class="form-check-input bg-switch" type="checkbox" id="flexSwitchCheckChecked" checked>
+                          <label class="form-check-label" for="flexSwitchCheckChecked">on</label>
+                        </div>
+                      </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body p-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                        URL Slug
+                        <div class="flex-grow-1"></div>
+                        <div class="form-check form-switch m-switch">
+                          <input class="form-check-input bg-switch" type="checkbox" id="flexSwitchCheckChecked" checked>
+                          <label class="form-check-label" for="flexSwitchCheckChecked">on</label>
+                        </div>
+                      </button>
+                    </h2>
+                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body p-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                        Open Graph Title
+                        <div class="flex-grow-1"></div>
+                        <div class="form-check form-switch m-switch">
+                          <input class="form-check-input bg-switch" type="checkbox" id="flexSwitchCheckChecked" checked>
+                          <label class="form-check-label" for="flexSwitchCheckChecked">on</label>
+                        </div>
+                      </button>
+                    </h2>
+                    <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body p-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                        Open Graph Description
+                        <div class="flex-grow-1"></div>
+                        <div class="form-check form-switch m-switch">
+                          <input class="form-check-input bg-switch" type="checkbox" id="flexSwitchCheckChecked" checked>
+                          <label class="form-check-label" for="flexSwitchCheckChecked">on</label>
+                        </div>
+                      </button>
+                    </h2>
+                    <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body p-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
+                        Open Graph Image
+                        <div class="flex-grow-1"></div>
+                        <div class="form-check form-switch m-switch">
+                          <input class="form-check-input bg-switch" type="checkbox" id="flexSwitchCheckChecked" checked>
+                          <label class="form-check-label" for="flexSwitchCheckChecked">on</label>
+                        </div>
+                      </button>
+                    </h2>
+                    <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body p-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="true" aria-controls="collapse9">
+                        Open Graph URL
+                        <div class="flex-grow-1"></div>
+                        <div class="form-check form-switch m-switch">
+                          <input class="form-check-input bg-switch" type="checkbox" id="flexSwitchCheckChecked" checked>
+                          <label class="form-check-label" for="flexSwitchCheckChecked">on</label>
+                        </div>
+                      </button>
+                    </h2>
+                    <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body p-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="true" aria-controls="collapse10">
+                        Twitter Title
+                        <div class="flex-grow-1"></div>
+                        <div class="form-check form-switch m-switch">
+                          <input class="form-check-input bg-switch" type="checkbox" id="flexSwitchCheckChecked" checked>
+                          <label class="form-check-label" for="flexSwitchCheckChecked">on</label>
+                        </div>
+                      </button>
+                    </h2>
+                    <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body p-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="true" aria-controls="collapse11">
+                        Twitter Image
+                        <div class="flex-grow-1"></div>
+                        <div class="form-check form-switch m-switch">
+                          <input class="form-check-input bg-switch" type="checkbox" id="flexSwitchCheckChecked" checked>
+                          <label class="form-check-label" for="flexSwitchCheckChecked">on</label>
+                        </div>
+                      </button>
+                    </h2>
+                    <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body p-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="true" aria-controls="collapse12">
+                        Twitter Image ALT
+                        <div class="flex-grow-1"></div>
+                        <div class="form-check form-switch m-switch">
+                          <input class="form-check-input bg-switch" type="checkbox" id="flexSwitchCheckChecked" checked>
+                          <label class="form-check-label" for="flexSwitchCheckChecked">on</label>
+                        </div>
+                      </button>
+                    </h2>
+                    <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body p-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="true" aria-controls="collapse13">
+                        Favicon
+                        <div class="flex-grow-1"></div>
+                        <div class="form-check form-switch m-switch">
+                          <input class="form-check-input bg-switch" type="checkbox" id="flexSwitchCheckChecked" checked>
+                          <label class="form-check-label" for="flexSwitchCheckChecked">on</label>
+                        </div>
+                      </button>
+                    </h2>
+                    <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body p-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="true" aria-controls="collapse14">
+                        XML Sitemap
+                        <div class="flex-grow-1"></div>
+                        <div class="form-check form-switch m-switch">
+                          <input class="form-check-input bg-switch" type="checkbox" id="flexSwitchCheckChecked" checked>
+                          <label class="form-check-label" for="flexSwitchCheckChecked">on</label>
+                        </div>
+                      </button>
+                    </h2>
+                    <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body p-body">
+                        <div class="form-check check-margin">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <p class="form-check-label" for="flexCheckDefault">The page must be added to XML sitemap Address of the XML Sitemap File <input type="txt" class="form-control" id="exampleFormControlInput1" placeholder="https://www.setmore.com/site..."></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="true" aria-controls="collapse15">
+                        HTML Sitemap
+                        <div class="flex-grow-1"></div>
+                        <div class="form-check form-switch m-switch">
+                          <input class="form-check-input bg-switch" type="checkbox" id="flexSwitchCheckChecked" checked>
+                          <label class="form-check-label" for="flexSwitchCheckChecked">on</label>
+                        </div>
+                      </button>
+                    </h2>
+                    <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body p-body">
+                        <div class="form-check check-margin">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <p class="form-check-label" for="flexCheckDefault">The page must be added to XML sitemap Address of the XML Sitemap File <input type="txt" class="form-control" id="exampleFormControlInput1" placeholder="https://www.setmore.com/site..."></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+
+  </body>
+</html>
