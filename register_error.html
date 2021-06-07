@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/register.css">
 
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
     <title>Mona Register</title>
   </head>
   <body>
@@ -40,27 +42,26 @@
                 <button type="button" class="form-control h-5 fs mb-24"><img src="assets/img/google.png" class="me-2">Login with google</button>
                 <button type="button" class="form-control h-5 fs mb-18"><img src="assets/img/facebook.png" class="me-2">Login with facebook</button>
               </div>
-              <div class="row align-items-center">
+              <div class="position-relative">
                 <hr class="col">
-                <p class="col-auto divider">or</p>
-                <hr class="col">
+                <p class="col-auto text-color center-wrapped">or</p>
               </div>
               <form action="login.html" method="POST">
                 <div class="mb-24">
-                  <label for="name" class="label-custom">Name</label>
+                  <label for="name" class="form-label label-bold">Name</label>
                   <input type="text" class="form-control h-5" name="name" id="name" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-24">
-                  <label for="email_address" class="label-custom">Email address</label>
+                  <label for="email_address" class="form-label label-bold">Email address</label>
                   <input type="email" class="form-control h-5 invalid" name="email_address" id="email_address" aria-describedby="emailHelp">
                   <div class="feedback">
                     Email address already exists. Trying to login?
                   </div>
                 </div>
-                <label for="phone" class="label-custom">Phone Number</label>
+                <label for="phone" class="form-label label-bold">Phone Number</label>
                 <div class="mb-24">
-                  <div class="input-group">
-                    <select class="form-select invalid h-5" aria-label="Default select example">
+                  <div class="number-phone-custom position-relative">
+                    <select aria-label="Default select example">
                       <option selected><img src="assets/img/country.png"> +62</a></option>
                       <option selected><img src="assets/img/country.png"> +62</a></option>
                       <option selected><img src="assets/img/country.png"> +62</a></option>
@@ -75,7 +76,7 @@
                   </div>
                 </div>
                 <div class="mb-24">
-                  <label for="password" class="label-custom">Password</label>
+                  <label for="password" class="form-label label-bold">Password</label>
                   <input type="password" class="form-control h-5" name="password" id="password">
                 </div>
                 <div class="d-grid gap-2 mb-28">

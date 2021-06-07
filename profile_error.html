@@ -14,6 +14,8 @@
     <!-- Profile CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/profile.css">
 
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
     <title>Mona Dashboard</title>
   </head>
   <body>
@@ -105,13 +107,17 @@
                         <input class="form-control custom-input" id="email_address" name="email_address" type="text" placeholder="user.email.com" aria-label="Disabled input example" disabled readonly>
                       </div>
                       <div class="input-group mb-3">
-                        <select class="form-select" id="number_phone_country" name="number_phone_country" aria-label="Example select with button addon">
-                          <option selected>+62</option>
-                          <option value="1">+62</option>
-                          <option value="2">+62</option>
-                          <option value="3">+62</option>
-                        </select>
-                        <input type="number" id="number_phone" name="number_phone" class="form-control" aria-label="Username" aria-describedby="basic-addon1" value="8978978909">
+                        <div class="number-phone-custom position-relative">
+                          <select aria-label="Default select example">
+                            <option selected><img src="assets/img/country.png"> +62</a></option>
+                            <option selected><img src="assets/img/country.png"> +62</a></option>
+                            <option selected><img src="assets/img/country.png"> +62</a></option>
+                            <option selected><img src="assets/img/country.png"> +62</a></option>
+                            <option selected><img src="assets/img/country.png"> +62</a></option>
+                            <option selected><img src="assets/img/country.png"> +62</a></option>
+                          </select>
+                          <input type="text" id="phone" class="form-control custom-input h-5" aria-label="Text input with dropdown button" value="89687456678">
+                        </div>
                       </div>
                       <div class="row">
                         <div class="col d-sm-block d-md-none"></div>

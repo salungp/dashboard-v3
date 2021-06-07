@@ -8,12 +8,12 @@
     <!-- Bootstrap CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 
     <link rel="stylesheet" type="text/css" href="assets/css/login.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
     <title>Mona Login</title>
   </head>
@@ -41,21 +41,20 @@
                 <button type="button" class="form-control h-5 mb-3"><img src="assets/img/google.png" class="me-2">Login with google</button>
                 <button type="button" class="form-control h-5 mb-18"><img src="assets/img/facebook.png" class="me-2">Login with facebook</button>
               </div>
-              <div class="row align-items-center">
+              <div class="position-relative">
                 <hr class="col">
-                <p class="col-auto text-color">or</p>
-                <hr class="col">
+                <p class="col-auto text-color center-wrapped">or</p>
               </div>
               <form action="index.html" method="POST">
                 <div class="mb-24">
-                  <label for="email_address" class="form-label">Email Address</label>
+                  <label for="email_address" class="form-label label-bold">Email Address</label>
                   <input type="email" class="form-control h-5 invalid" name="email_address" id="email_address" aria-describedby="emailHelp">
                   <div class="feedback">
                     Email Address does not exist
                   </div>
                 </div>
                 <div class="mb-24">
-                  <label for="password" class="form-label">Password</label>
+                  <label for="password" class="form-label label-bold">Password</label>
                   <input type="password" class="form-control h-5" name="password" id="password">
                 </div>
                 <div class="mb-24 form-check">
@@ -63,7 +62,7 @@
                   <label class="form-check-label" for="remember_me">Keep me logged in</label>
                 </div>
                 <div class="mb-28 d-grid gap-2">
-                  <button type="submit" class="btn btn-primary h-5">Login</button>
+                  <button type="submit" class="btn btn-primary label-bold h-5">Login</button>
                 </div>
                 <p class="text-center priv">By signing in, you agree to our <a href="#" class="text-decoration-none">Teams of use & Privacy Policy.</a></p>
               </form>

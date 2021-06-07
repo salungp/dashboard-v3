@@ -268,7 +268,7 @@ body {
 	position: fixed;
 	top: 0;
 	left: 6%;
-	z-index: 9;
+	z-index: 12;
 	box-shadow: 0 3px 12px rgba(0,0,0,.05);
 }
 
@@ -344,7 +344,7 @@ body {
 	position: relative;
 	width: 150px;
 	height: 150px;
-	z-index: 1000;
+	z-index: 6;
 }
 
 .big-circle circle {
@@ -372,7 +372,7 @@ body {
 	position: relative;
 	width: 50px;
 	height: 50px;
-	z-index: 1000;
+	z-index: 6;
 }
 
 .small-circle circle {
@@ -427,7 +427,7 @@ body {
 
 .progress-rounded {
 	border-radius: 30px;
-	height: 12px;
+	height: 6px;
 }
 
 .progress-rounded .progress-bar {
@@ -468,6 +468,16 @@ body {
 	border: 1px solid rgba(0,0,0,.1);
 	padding: 20px;
 	line-height: 30px;
+}
+
+.move-right-position {
+	position: absolute;
+	right: 0;
+}
+
+.tooltip-inner {
+   text-align: left;
+   padding: 24px;
 }
 
 /* Custom input line */
@@ -575,6 +585,39 @@ body {
 .custom-badge-danger {
 	color: #EB5757;
 	background: rgba(235, 87, 87, 0.1);
+}
+
+.table-custom td, .table-custom th {
+	padding: 16px 30px;
+}
+
+.center-wrapped {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 40px;
+	height: 26px;
+	background-color: #ffffff;
+	text-align: center;
+}
+
+.number-phone-custom select {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 15px;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.number-phone-custom select:focus {
+	outline: none;
+}
+
+.number-phone-custom input {
+	padding-left: 76px;
 }
 
 /* Condition if in the mobile size */
