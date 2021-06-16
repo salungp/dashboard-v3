@@ -1,0 +1,127 @@
+.mr-24 {
+	margin-right: 24px;
+}
+
+.mr-16 {
+	margin-right: 16px;
+}
+
+.mr-10 {
+	margin-right: 10px;
+}
+
+.mr-30 {
+	margin-right: 30px;
+}
+
+.mb-0{
+	margin-bottom: 0;
+}
+
+.no-margin {
+	margin: 0;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.pl-12{
+	padding-left: 12px;
+}
+
+.pl-16{
+	padding-left: 16px;
+}
+
+.my-8{
+	margin: 8px;
+}
+
+.h-4{
+	height: 40px;
+}
+
+.pl-20{
+	padding-left: 20px;
+}
+
+.h-400 {
+	height: 260px;
+}
+
+.f-big {
+	font-size: 36px;
+}
+
+.f-med {
+	font-size: 24px;
+}
+
+.f-body {
+	font-size: 16px;
+}
+
+.f-small {
+	font-size: 12px;
+}
+
+.sub-text {
+	font-size: 14px;
+}
+
+.card-alert{
+	background: rgba(235, 87, 87, 0.12);
+	border: 1px solid #EB5757;
+	border-radius: 8px;
+	margin-bottom: 24px;
+}
+.btn-delete{
+	background: #EB5757;
+	border-radius: 8px;
+	color: #ffffff;
+}
+.alert-title{
+	font-weight: 600;
+	color: #EB5757;
+	line-height: 30px;
+	letter-spacing: -0.02em;
+}
+.text-alert{
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: -0.02em;
+	color: #747B90;
+}
+.alert-icon{
+	color: #EB5757;
+}
+.btn-orange{
+	background: #FF8A00;
+	border-radius: 8px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: -0.02em;
+	color: #FFFFFF;
+}
+.btn-custom {
+	border-radius: 8px;
+	background: #FF8A00;
+	color: #ffffff;
+}
+
+.btn-custom:hover {
+	background: #DD7700;
+	color: #ffffff;
+}
+.w-bar{
+	width: 65px;
+}
+
+.mb-40{
+	margin-bottom: 40px;
+}
+.button-width {
+	width: 150px;
+}

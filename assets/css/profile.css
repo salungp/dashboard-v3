@@ -9,15 +9,6 @@
 	letter-spacing: -0.02em;
 	color: #363853;
 }
-.btn-orange{
-	background: #FF8A00;
-	border-radius: 8px;
-	font-weight: 600;
-	font-size: 14px;
-	line-height: 21px;
-	letter-spacing: -0.02em;
-	color: #FFFFFF;
-}
 .invalid{
 	border: 1px solid #EB5757;
 	box-sizing: border-box;
@@ -28,31 +19,5 @@
 	font-size: 12px;
 	line-height: 18px;
 	letter-spacing: -0.02em;
-	color: #EB5757;
-}
-.card-alert{
-	background: rgba(235, 87, 87, 0.12);
-	border: 1px solid #EB5757;
-	border-radius: 8px;
-	margin-bottom: 24px;
-}
-.btn-delete{
-	background: #EB5757;
-	border-radius: 8px;
-	color: #ffffff;
-}
-.alert-title{
-	font-weight: 600;
-	color: #EB5757;
-	line-height: 30px;
-	letter-spacing: -0.02em;
-}
-.text-alert{
-	font-size: 14px;
-	line-height: 24px;
-	letter-spacing: -0.02em;
-	color: #747B90;
-}
-.alert-icon{
 	color: #EB5757;
 }

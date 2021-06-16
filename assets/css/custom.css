@@ -49,11 +49,6 @@ body {
 }
 
 /* Load icon files */
-.icon-plus {
-	width: 16px;
-	height: 16px;
-	background-image: url(../icons/plus.svg);
-}
 
 .add-project-button {
 	width: 40px;
@@ -86,163 +81,9 @@ body {
 	bottom: 24px;
 }
 
-
-/* List icon class */
-.icon-home-active {
-	width: 24px;
-	height: 24px;
-	background-image: url(../icons/ic_home_active.svg);
-	background-position: center;
-}
-
-.icon-profile-active {
-	width: 24px;
-	height: 24px;
-	background-image: url(../icons/ic_profile_active.svg);
-	background-position: center;
-}
-
-.icon-settings-active {
-	width: 24px;
-	height: 24px;
-	background-image: url(../icons/ic_settings_active.svg);
-	background-position: center;
-}
-
-.icon-home {
-	width: 24px;
-	height: 24px;
-	background-image: url(../icons/ic_home.svg);
-	background-position: center;
-}
-
-.icon-project-active {
-	width: 24px;
-	height: 24px;
-	background-image: url(../icons/ic_project_active.svg);
-	background-position: center;
-}
-
-.icon-project {
-	width: 24px;
-	height: 24px;
-	background-image: url(../icons/ic_project.svg);
-	background-position: center;
-}
-
-.icon-profile {
-	width: 24px;
-	height: 24px;
-	background-image: url(../icons/ic_profile.svg);
-	background-position: center;
-}
-
-.icon-qa {
-	width: 24px;
-	height: 24px;
-	background-image: url(../icons/ic_QAPage.svg);
-	background-position: center;
-}
-
-.icon-settings {
-	width: 24px;
-	height: 24px;
-	background-image: url(../icons/ic_settings.svg);
-	background-position: center;
-}
-
-.icon-logout {
-	width: 24px;
-	height: 24px;
-	background-image: url(../icons/ic_logout.svg);
-	background-position: center;
-}
-
-.icon-folder {
-	width: 18px;
-	height: 18px;
-	background-image: url(../icons/ic_folder.svg);
-	display: inline-block;
-	margin-right: 8px;
-	background-position: center;
-}
-
-.icon-toggle {
-	width: 16px;
-	height: 16px;
-	background-image: url(../icons/ic_toggle.svg);
-	background-repeat: no-repeat;
-}
-
-.icon-check {
-	width: 18px;
-	height: 18px;
-	background-image: url(../icons/check.svg);
-	background-repeat: no-repeat;
-	margin-right: 8px;
-}
-
-.icon-x {
-	width: 18px;
-	height: 18px;
-	background-image: url(../icons/x.svg);
-	background-repeat: no-repeat;
-	margin-right: 8px;
-	background-position: center;
-}
-
-.icon-warning {
-	width: 18px;
-	height: 18px;
-	background-image: url(../icons/warning.svg);
-	background-repeat: no-repeat;
-	margin-right: 8px;
-	background-position: center;
-}
-
-.icon-info {
-	width: 22px;
-	height: 22px;
-	background-image: url(../icons/info.svg);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-.icon-setting-black {
-	width: 22px;
-	height: 22px;
-	background-image: url(../icons/setting_black.svg);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-.icon-trash {
-	width: 22px;
-	height: 22px;
-	background-image: url(../icons/trash.svg);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
 .btn-clear {
 	border: none;
 	background: transparent;
-}
-
-.excel-icon {
-	width: 30px;
-	height: 30px;
-	background-image: url(../icons/excel-icon.svg);
-	background-repeat: no-repeat;
-	margin-right: 8px;
-}
-
-.pdf-icon {
-	width: 30px;
-	height: 30px;
-	background-image: url(../icons/pdf-icon.png);
-	background-repeat: no-repeat;
-	margin-right: 8px;
 }
 
 .button-toggle {
@@ -313,21 +154,6 @@ body {
 
 .custom-input {
 	border-radius: 8px;
-}
-
-.btn-custom {
-	border-radius: 8px;
-	background: #FF8A00;
-	color: #ffffff;
-}
-
-.btn-custom:hover {
-	background: #DD7700;
-	color: #ffffff;
-}
-
-.button-width {
-	width: 150px;
 }
 
 .custom-link {
@@ -543,63 +369,9 @@ body {
 	border-right: 1px solid rgba(0,0,0,.1);
 }
 
-/* custom margin class */
-.mr-24 {
-	margin-right: 24px;
-}
-
-.mr-16 {
-	margin-right: 16px;
-}
-
-.mr-10 {
-	margin-right: 10px;
-}
-
-.mr-30 {
-	margin-right: 30px;
-}
-
-.mb-0{
-	margin-bottom: 0;
-}
-
-.no-margin {
-	margin: 0;
-}
-
-.no-padding {
-	padding: 0;
-}
-
-/* custom font size */
-.f-big {
-	font-size: 36px;
-}
-
-.f-med {
-	font-size: 24px;
-}
-
-.f-body {
-	font-size: 16px;
-}
-
-.f-small {
-	font-size: 12px;
-}
-
-.sub-text {
-	font-size: 14px;
-}
-
 .modal-custom {
 	border-radius: 10px;
 	border: none;
-}
-
-.h-400 {
-	height: 260px;
 }
 
 .custom-badge-danger {
@@ -673,14 +445,6 @@ body {
 	width: 1116px;
 }
 
-.w-bar{
-	width: 65px;
-}
-
-.mb-40{
-	margin-bottom: 40px;
-}
-
 .title-uncompressed{
 	font-weight: 500;
 	font-size: 16px;
@@ -712,10 +476,6 @@ body {
 	color: #1A73E8;
 	text-decoration: none;
 	margin-bottom: 16px;
-}
-
-.pl-20{
-	padding-left: 20px;
 }
 
 .w-rate{
@@ -758,22 +518,6 @@ body {
 
 .line-rate{
 	margin-top: -5px;
-}
-
-.pl-12{
-	padding-left: 12px;
-}
-
-.pl-16{
-	padding-left: 16px;
-}
-
-.my-8{
-	margin: 8px;
-}
-
-.h-4{
-	height: 40px;
 }
 
 .text-rete{
