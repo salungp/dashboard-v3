@@ -83,6 +83,19 @@
 	background-position: center;
 }
 
+.icon-folder:hover {
+	background-image: url(../icons/ic_folder_hover.svg);
+}
+
+.icon-create {
+	width: 18px;
+	height: 18px;
+	background-image: url(../icons/ic_plus.svg);
+	display: inline-block;
+	margin-right: 8px;
+	background-position: center;
+}
+
 .icon-toggle {
 	width: 16px;
 	height: 16px;
@@ -96,6 +109,7 @@
 	background-image: url(../icons/check.svg);
 	background-repeat: no-repeat;
 	margin-right: 8px;
+	margin-top: 3px;
 }
 
 .icon-x {
@@ -105,6 +119,7 @@
 	background-repeat: no-repeat;
 	margin-right: 8px;
 	background-position: center;
+	margin-top: 3px;
 }
 
 .icon-warning {
@@ -114,6 +129,7 @@
 	background-repeat: no-repeat;
 	margin-right: 8px;
 	background-position: center;
+	margin-top: 3px;
 }
 
 .icon-info {
@@ -154,4 +170,12 @@
 	background-image: url(../icons/pdf-icon.png);
 	background-repeat: no-repeat;
 	margin-right: 8px;
+}
+
+.chevron-icon {
+	width: 24px;
+	height: 24px;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+	background-repeat: no-repeat;
+	background-position: center;
 }

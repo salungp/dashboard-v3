@@ -39,6 +39,7 @@ body{
 	line-height: 72px;
 	text-transform: capitalize;
 	color: #142640;
+	max-width: 635px;
 }
 .img-custom{
 	width: 605px;

@@ -63,12 +63,12 @@
                 My Projects
               </button>
               <ul class="dropdown-menu dropdown-menu-custom" aria-labelledby="myprojects">
-                <li><a class="dropdown-item" href="#">Project 1</a></li>
-                <li><a class="dropdown-item" href="#">Project 2</a></li>
+                <li><a class="dropdown-item dropdown-item-custom" href="#">Project 1</a></li>
+                <li><a class="dropdown-item dropdown-item-custom" href="#">Project 2</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Create new project</a></li>
+                <li><a class="dropdown-item dropdown-item-custom d-inline-flex align-items-center" href="#"><div class="icon-create"></div>Create new project</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item d-inline-flex align-items-center" href="#"><div class="icon-folder"></div> My Project</a></li>
+                <li><a class="dropdown-item dropdown-item-custom d-inline-flex align-items-center" href="#"><div class="icon-folder"></div> My Project</a></li>
               </ul>
             </div>
             <div class="dropdown">
@@ -87,7 +87,7 @@
         </div>
         <!-- content -->
         <div class="content-inner">
-          <div class="alert alert-success alert-dismissible fade show" role="alert">
+          <div class="alert alert-success alert-success-custom alert-dismissible fade show " role="alert">
             Your password account has been updated.
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
@@ -99,20 +99,24 @@
             <div class="col">
               <div class="card-custom">
                 <div class="card-body py-5">
-                  <div class="row">
-                    <div class="col-5 col-md-3 text-end label-custom">
-                      <p class="mt-2">Full Name</p>
-                      <p class="mt-4">Email Address</p>
-                      <p class="mt-4">Phone Number</p>
+                  <form>
+                    <div class="row mb-3">
+                      <label for="name" class="col-5 col-md-3 text-end col-form-label label-custom">Full Name</label>
+                      <div class="col">
+                        <input type="text" class="form-control custom-input" id="name" value="User Name">
+                      </div>
+                      <div class="col-md-3 d-none d-md-block"></div>
                     </div>
-                    <div class="col">
-                      <div class="input-group mb-3">
-                        <input type="text" class="form-control custom-input" id="username" name="username" placeholder="User Name" aria-label="Username" aria-describedby="basic-addon1">
+                    <div class="row mb-3">
+                      <label for="email" class="col-5 col-md-3 text-end col-form-label label-custom">Email Address</label>
+                      <div class="col">
+                        <input type="email" class="form-control custom-input" id="email" placeholder="user.email.com" disabled>
                       </div>
-                      <div class="input-group mb-3">
-                        <input class="form-control custom-input" id="email_address" name="email_address" type="text" placeholder="user.email.com" aria-label="Disabled input example" disabled readonly>
-                      </div>
-                      <div class="input-group mb-3">
+                      <div class="col-md-3 d-none d-md-block"></div>
+                    </div>
+                    <div class="row">
+                      <label for="phone" class="col-5 col-md-3 text-end col-form-label label-custom">Phone Number</label>
+                      <div class="col">
                         <div class="number-phone-custom position-relative">
                           <select aria-label="Default select example">
                             <option selected><img src="assets/img/country.png"> +62</a></option>
@@ -124,16 +128,17 @@
                           </select>
                           <input type="text" id="phone" class="form-control custom-input h-5" aria-label="Text input with dropdown button" value="89687456678">
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="col d-sm-block d-md-none"></div>
-                        <div class="col-auto">
-                          <button type="button" class="btn btn-orange">Update Profile</button>
+                        <div class="row mt-3">
+                          <div class="col d-sm-block d-md-none"></div>
+                          <div class="col-auto">
+                            <button type="button" class="btn btn-orange btn-custom">Update Profile</button>
+                          </div>
                         </div>
                       </div>
+                      <div class="col-md-3 d-none d-md-block"></div>
                     </div>
-                    <div class="col-md-3 d-none d-md-block"></div>
-                  </div>
+
+                  </form>
                 </div>
               </div>
             </div>
@@ -146,31 +151,35 @@
             <div class="col">
               <div class="card-custom">
                 <div class="card-body py-5">
-                  <div class="row">
-                    <div class="col-5 col-md-3 text-end label-custom">
-                      <p class="mt-2">Current Password</p>
-                      <p class="mt-4">New Password</p>
-                      <p class="mt-4">Confirm Password</p>
+                  <form>
+                    <div class="row mb-3">
+                      <label for="current_password" class="col-5 col-md-3 text-end col-form-label label-custom">Current Password</label>
+                      <div class="col">
+                        <input type="password" class="form-control custom-input" id="current_password" name="current_password" aria-label="Password" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="col-md-3 d-none d-md-block"></div>
                     </div>
-                    <div class="col">
-                      <div class="input-group mb-3">
-                        <input type="password" class="form-control" id="current_password" name="current_password" aria-label="Password" aria-describedby="basic-addon1">
+                    <div class="row mb-3">
+                      <label for="new_password" class="col-5 col-md-3 text-end col-form-label label-custom">New Password</label>
+                      <div class="col">
+                        <input type="password" class="form-control custom-input" id="new_password" name="new_password" aria-label="Password" aria-describedby="basic-addon1">
                       </div>
-                      <div class="input-group mb-3">
-                        <input type="password" class="form-control" id="new_password" name="new_password" aria-label="Password" aria-describedby="basic-addon1">
-                      </div>
-                      <div class="input-group mb-3">
-                        <input type="password" class="form-control" id="confirm_password" name="confirm_password" aria-label="Password" aria-describedby="basic-addon1">
-                      </div>
-                      <div class="row">
-                        <div class="col d-sm-block d-md-none"></div>
-                        <div class="col-auto">
-                          <button type="button" class="btn btn-orange">Update Password</button>
+                      <div class="col-md-3 d-none d-md-block"></div>
+                    </div>
+                    <div class="row">
+                      <label for="confirm_password" class="col-5 col-md-3 text-end col-form-label label-custom">Confirm Password</label>
+                      <div class="col">
+                        <input type="password" class="form-control custom-input" id="confirm_password" name="confirm_password" aria-label="Password" aria-describedby="basic-addon1">
+                        <div class="row mt-3">
+                          <div class="col d-sm-block d-md-none"></div>
+                          <div class="col-auto">
+                            <button type="button" class="btn btn-orange btn-custom">Update Password</button>
+                          </div>
                         </div>
                       </div>
+                      <div class="col-md-3 d-none d-md-block"></div>
                     </div>
-                    <div class="col-md-3 d-none d-md-block"></div>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -213,69 +222,70 @@
 
 <!-- Modal -->
 <div class="modal fade" id="delete_modal" tabindex="-1" aria-labelledby="example_modal_label" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content modal-custom">
-      <div class="modal-header">
-        <h5 class="modal-title" id="example_modal_label">Delete Account</h5>
+      <div class="modal-header modal-header-custom">
+        <p class="modal-title" id="example_modal_label">Confirm Delete Account</p>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        <h5 class="label-bold mb-3">Why are you leaving?</h5>
-        <div class="form-check mb-2">
+      <div class="modal-body modal-account">
+        <h6 class="label-bold mb-3">Why are you leaving?</h6>
+        <div class="form-check mb-12">
           <input class="form-check-input" type="radio" name="flex_radio_default" id="flex_radio_default1">
-          <label class="form-check-label" for="flex_radio_default1">
+          <label class="form-check-label check-label-custom" for="flex_radio_default1">
             It was too costly
           </label>
         </div>
-        <div class="form-check mb-2">
+        <div class="form-check mb-12">
           <input class="form-check-input" type="radio" name="flex_radio_default" id="flex_radio_default2">
-          <label class="form-check-label" for="flex_radio_default2">
+          <label class="form-check-label check-label-custom" for="flex_radio_default2">
             Needed more feature
           </label>
         </div>
-        <div class="form-check mb-2">
+        <div class="form-check mb-12">
           <input class="form-check-input" type="radio" name="flex_radio_default" id="flex_radio_default3">
-          <label class="form-check-label" for="flex_radio_default3">
+          <label class="form-check-label check-label-custom" for="flex_radio_default3">
             It was to complicated to use
           </label>
         </div>
-        <div class="form-check mb-2">
+        <div class="form-check mb-12">
           <input class="form-check-input" type="radio" name="flex_radio_default" id="flex_radio_default4">
-          <label class="form-check-label" for="flex_radio_default4">
+          <label class="form-check-label check-label-custom" for="flex_radio_default4">
             I am using another search engine analyzer
           </label>
         </div>
-        <div class="form-check mb-2">
+        <div class="form-check mb-12">
           <input class="form-check-input" type="radio" name="flex_radio_default" id="flex_radio_default5">
-          <label class="form-check-label" for="flex_radio_default5">
+          <label class="form-check-label check-label-custom" for="flex_radio_default5">
             Customer support was low
           </label>
         </div>
-        <div class="form-check mb-2">
+        <div class="form-check mb-12">
           <input class="form-check-input" type="radio" name="flex_radio_default" id="flex_radio_default6">
-          <label class="form-check-label" for="flex_radio_default6">
+          <label class="form-check-label check-label-custom" for="flex_radio_default6">
             There where technincal issues
           </label>
         </div>
-        <div class="form-check mb-2">
+        <div class="form-check mb-12">
           <input class="form-check-input" type="radio" name="flex_radio_default" id="flex_radio_default7">
-          <label class="form-check-label" for="flex_radio_default7">
+          <label class="form-check-label check-label-custom" for="flex_radio_default7">
             It is not main serving my main purpose
           </label>
         </div>
-        <div class="form-check mb-2">
+        <div class="form-check mb-4">
           <input class="form-check-input" type="radio" name="flex_radio_default" id="flex_radio_default8">
-          <label class="form-check-label" for="flex_radio_default8">
+          <label class="form-check-label check-label-custom" for="flex_radio_default8">
             I have another reason
           </label>
         </div>
 
-        <h5 class="label-bold mb-3">Custom Message</h5>
-        <textarea class="form-control custom-input" placeholder=""></textarea>
+        <h6 class="label-bold mb-12">Custom Message</h6>
+        <textarea class="form-control custom-input textarea-custom" maxlength="2000" placeholder="Write your custom message"></textarea>
+        <p class="text-end max-length">0/2000</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-rounded btn-light" data-bs-dismiss="modal">Not sure about this</button>
-        <button type="button" class="btn btn-custom btn-orange">Delete Account</button>
+        <button type="button" class="btn btn-rounded btn-grey" data-bs-dismiss="modal">Not sure about this</button>
+        <button type="button" class="btn btn-orange">Confirm</button>
       </div>
     </div>
   </div>

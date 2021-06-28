@@ -46,8 +46,19 @@
     width:45px;
     height: 18px;
 }
-.check-margin{
-	margin-bottom: 18px;
+.check-custom{
+	font-size: 16px;
+	line-height: 24px;
+	color: #363853;
+	margin-bottom: 21px;
+}
+
+.textarea-custom{
+	margin-top: 20px;
+	height: 80px;
+	border: 1px solid #DADDFA;
+	box-sizing: border-box;
+	border-radius: 8px;
 }
 .btn-orange{	
 	border-radius: 8px;
@@ -77,4 +88,16 @@
 }
 .p-body{
 	padding: 30px;
+}
+
+@media(max-width: 768px){
+	.check-custom{
+		font-size: 14px;
+		line-height: 18px;
+		margin-bottom: 18px;
+	}
+	.textarea-custom{
+		height: 69px;
+		margin-top: 15px;
+	}
 }

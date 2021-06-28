@@ -9,36 +9,7 @@
 	color: #000000;
 	margin-bottom: 10px;
 }
-.btn-grey{
-	border-radius: 8px;
-	background: #EBEBEF;
-	color: #4D4E5D;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 21px;
-	letter-spacing: -0.02em;
-	margin-right: 6px;
-}
-.btn-grey:hover {
-	background: #d2d2d6;
-	color: #4D4E5D;
-}
-.btn-orange{
-	background: #FF8A00;
-	border-radius: 8px;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 21px;
-	letter-spacing: -0.02em;
-	color: #FFFFFF;
-}
-.btn-orange:hover{
-	color: #ffffff;
-	background: #DD7700;
-}
+
 .mb-24{
 	margin-bottom: 24px;
-}
-.h-4{
-	height: 40px;
 }

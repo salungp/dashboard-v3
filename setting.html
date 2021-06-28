@@ -63,12 +63,12 @@
                 My Projects
               </button>
               <ul class="dropdown-menu dropdown-menu-custom" aria-labelledby="myprojects">
-                <li><a class="dropdown-item" href="#">Project 1</a></li>
-                <li><a class="dropdown-item" href="#">Project 2</a></li>
+                <li><a class="dropdown-item dropdown-item-custom" href="#">Project 1</a></li>
+                <li><a class="dropdown-item dropdown-item-custom" href="#">Project 2</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Create new project</a></li>
+                <li><a class="dropdown-item dropdown-item-custom d-inline-flex align-items-center" href="#"><div class="icon-create"></div>Create new project</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item d-inline-flex align-items-center" href="#"><div class="icon-folder"></div> My Project</a></li>
+                <li><a class="dropdown-item dropdown-item-custom d-inline-flex align-items-center" href="#"><div class="icon-folder"></div> My Project</a></li>
               </ul>
             </div>
             <div class="dropdown">
@@ -118,326 +118,400 @@
             <div class="col-md">
               <div class="card-collapse">
 
-                <div class="accordion" id="accordion_example">
+                <div class="accordion-custom-wrapper">
 
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="heading_one">
-                      <button class="accordion-button p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                        Meta title tag
-                        <div class="flex-grow-1"></div>
-                        <div class="form-check form-switch m-switch">
-                          <input class="form-check-input bg-switch" type="checkbox" id="flex_switch_check_checked" checked>
-                          <label class="form-check-label" for="flex_switch_check_checked">on</label>
+                  <div class="wrap">
+                    <div class="accordion-custom d-flex justify-content-between align-items-center">
+                      <span>Meta title tag</span>
+                      <div class="d-flex align-items-center">
+                        <div class="switch-group mr-16">
+                          <label class="switch">
+                            <input type="checkbox" class="switch-custom" checked id="switch_1" name="switch_1">
+                            <span class="slider"></span>
+                          </label>
+                          <label for="switch_1">ON</label>
                         </div>
-                      </button>
-                    </h2>
-                    <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading_one" data-bs-parent="#accordion_example">
-                      <div class="accordion-body p-body">
+                        <label class="accordion-button-custom2" for="accordion_main">
+                          <div class="chevron-icon"></div>
+                        </label>
+                      </div>
+                    </div>
+                    <input type="checkbox" name="accordion_main" class="accordion-main d-none" id="accordion_main">
+                    <div class="panel">
+                      <div class="form-check check-custom">
+                        <input class="form-check-input" type="checkbox" value="" id="flex_check_default1">
+                        <label class="form-check-label" for="flex_check_default1">Maximum length of Title tag should be <input type="number" class="text-line" /> Characters</label>
                         
-                        <div class="form-check check-margin">
-                          <input class="form-check-input" type="checkbox" value="" id="flex_check_default1">
-                          <label class="form-check-label" for="flex_check_default1">Maximum length of Title tag should be <input type="number" class="text-line" /> Characters</label>
-                        </div>
-                        <div class="form-check check-margin">
-                          <input class="form-check-input" type="checkbox" value="" id="flex_check_default2">
-                          <label class="form-check-label" for="flex_check_default2">Maximum length of Title tag should be <input type="number" class="text-line" /> Characters</label>
-                        </div>
-                        <div class="form-check check-margin">
-                          <input class="form-check-input" type="checkbox" value="" id="flex_check_default3">
-                          <label class="form-check-label" for="flex_check_default3">Title Tag must not be equal to H1 heading tag</label>
-                        </div>
-                        <div class="form-check check-margin">
-                          <input class="form-check-input" type="checkbox" value="" id="flex_check_default4">
-                          <label class="form-check-label" for="flex_check_default4">Title Tag must be either in camel casing or sentence casing</label>
-                        </div>
-                        <div class="form-check check-margin">
-                          <input class="form-check-input" type="checkbox" value="" id="flex_check_default5">
-                          <label class="form-check-label" for="flex_check_default5">Title Tag must be in camel casing</label>
-                        </div>
-                        <div class="form-check check-margin">
-                          <input class="form-check-input" type="checkbox" value="" id="flex_check_default6">
-                          <label class="form-check-label" for="flex_check_default6">Title Tag must be in sentence casing</label>
-                        </div>
-                        <div class="form-check check-margin">
-                          <input class="form-check-input" type="checkbox" value="" id="flex_check_default7">
-                          <label class="form-check-label" for="flex_check_default7">Exclude specific words from casing checks (separate each word with a comma)</label>
-                          <textarea class="form-control" id="example_form_control_textarea" rows="3"></textarea>
-                        </div>
+                      </div>
+                      <div class="form-check check-custom">
+                        <input class="form-check-input" type="checkbox" value="" id="flex_check_default2">
+                        <label class="form-check-label" for="flex_check_default2">Maximum length of Title tag should be <input type="number" class="text-line" /> Characters</label>
+                      </div>
+                      <div class="form-check check-custom">
+                        <input class="form-check-input" type="checkbox" value="" id="flex_check_default3">
+                        <label class="form-check-label" for="flex_check_default3">Title Tag must not be equal to H1 heading tag</label>
+                      </div>
+                      <div class="form-check check-custom">
+                        <input class="form-check-input" type="checkbox" value="" id="flex_check_default4">
+                        <label class="form-check-label" for="flex_check_default4">Title Tag must be either in camel casing or sentence casing</label>
+                      </div>
+                      <div class="form-check check-custom">
+                        <input class="form-check-input" type="checkbox" value="" id="flex_check_default5">
+                        <label class="form-check-label" for="flex_check_default5">Title Tag must be in camel casing</label>
+                      </div>
+                      <div class="form-check check-custom">
+                        <input class="form-check-input" type="checkbox" value="" id="flex_check_default6">
+                        <label class="form-check-label" for="flex_check_default6">Title Tag must be in sentence casing</label>
+                      </div>
+                      <div class="form-check check-custom">
+                        <input class="form-check-input" type="checkbox" value="" id="flex_check_default7">
+                        <label class="form-check-label" for="flex_check_default7">Exclude specific words from casing checks (separate each word with a comma)</label>
+                        <textarea class="form-control textarea-custom" id="example_form_control_textarea" rows="3"></textarea>
+                      </div>
+                    </div>
+                  </div>
 
+                  <div class="wrap">
+                    <div class="accordion-custom d-flex justify-content-between align-items-center">
+                      <span>Meta Description</span>
+                      <div class="d-flex align-items-center">
+                        <div class="switch-group mr-16">
+                          <label class="switch">
+                            <input type="checkbox" class="switch-custom" checked id="switch_1" name="switch_1">
+                            <span class="slider"></span>
+                          </label>
+                          <label for="switch_1">ON</label>
+                        </div>
+                        <label class="accordion-button-custom2" for="accordion_main1">
+                          <div class="chevron-icon"></div>
+                        </label>
                       </div>
+                    </div>
+                    <input type="checkbox" name="accordion_main1" class="accordion-main d-none" id="accordion_main1">
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+
+                  <div class="wrap">
+                    <div class="accordion-custom d-flex justify-content-between align-items-center">
+                      <span>Robots Meta Tag</span>
+                      <div class="d-flex align-items-center">
+                        <div class="switch-group mr-16">
+                          <label class="switch">
+                            <input type="checkbox" class="switch-custom" checked id="switch_1" name="switch_1">
+                            <span class="slider"></span>
+                          </label>
+                          <label for="switch_1">ON</label>
+                        </div>
+                        <label class="accordion-button-custom2" for="accordion_main2">
+                          <div class="chevron-icon"></div>
+                        </label>
+                      </div>
+                    </div>
+                    <input type="checkbox" name="accordion_main2" class="accordion-main d-none" id="accordion_main2">
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+
+                  <div class="wrap">
+                    <div class="accordion-custom d-flex justify-content-between align-items-center">
+                      <span>Canonical URL</span>
+                      <div class="d-flex align-items-center">
+                        <div class="switch-group mr-16">
+                          <label class="switch">
+                            <input type="checkbox" class="switch-custom" checked id="switch_1" name="switch_1">
+                            <span class="slider"></span>
+                          </label>
+                          <label for="switch_1">ON</label>
+                        </div>
+                        <label class="accordion-button-custom2" for="accordion_main3">
+                          <div class="chevron-icon"></div>
+                        </label>
+                      </div>
+                    </div>
+                    <input type="checkbox" name="accordion_main3" class="accordion-main d-none" id="accordion_main3">
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+
+                  <div class="wrap">
+                    <div class="accordion-custom d-flex justify-content-between align-items-center">
+                      <span>URL Slug</span>
+                      <div class="d-flex align-items-center">
+                        <div class="switch-group mr-16">
+                          <label class="switch">
+                            <input type="checkbox" class="switch-custom" checked id="switch_1" name="switch_1">
+                            <span class="slider"></span>
+                          </label>
+                          <label for="switch_1">ON</label>
+                        </div>
+                        <label class="accordion-button-custom2" for="accordion_main4">
+                          <div class="chevron-icon"></div>
+                        </label>
+                      </div>
+                    </div>
+                    <input type="checkbox" name="accordion_main5" class="accordion-main d-none" id="accordion_main4">
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+
+                  <div class="wrap">
+                    <div class="accordion-custom d-flex justify-content-between align-items-center">
+                      <span>Open Graph Title</span>
+                      <div class="d-flex align-items-center">
+                        <div class="switch-group mr-16">
+                          <label class="switch">
+                            <input type="checkbox" class="switch-custom" checked id="switch_1" name="switch_1">
+                            <span class="slider"></span>
+                          </label>
+                          <label for="switch_1">ON</label>
+                        </div>
+                        <label class="accordion-button-custom2" for="accordion_main5">
+                          <div class="chevron-icon"></div>
+                        </label>
+                      </div>
+                    </div>
+                    <input type="checkbox" name="accordion_main5" class="accordion-main d-none" id="accordion_main5">
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+
+                  <div class="wrap">
+                    <div class="accordion-custom d-flex justify-content-between align-items-center">
+                      <span>Open Graph Description</span>
+                      <div class="d-flex align-items-center">
+                        <div class="switch-group mr-16">
+                          <label class="switch">
+                            <input type="checkbox" class="switch-custom" checked id="switch_1" name="switch_1">
+                            <span class="slider"></span>
+                          </label>
+                          <label for="switch_1">ON</label>
+                        </div>
+                        <label class="accordion-button-custom2" for="accordion_main6">
+                          <div class="chevron-icon"></div>
+                        </label>
+                      </div>
+                    </div>
+                    <input type="checkbox" name="accordion_main6" class="accordion-main d-none" id="accordion_main6">
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+
+                  <div class="wrap">
+                    <div class="accordion-custom d-flex justify-content-between align-items-center">
+                      <span>Open Graph Image</span>
+                      <div class="d-flex align-items-center">
+                        <div class="switch-group mr-16">
+                          <label class="switch">
+                            <input type="checkbox" class="switch-custom" checked id="switch_1" name="switch_1">
+                            <span class="slider"></span>
+                          </label>
+                          <label for="switch_1">ON</label>
+                        </div>
+                        <label class="accordion-button-custom2" for="accordion_main7">
+                          <div class="chevron-icon"></div>
+                        </label>
+                      </div>
+                    </div>
+                    <input type="checkbox" name="accordion_main7" class="accordion-main d-none" id="accordion_main7">
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+
+                  <div class="wrap">
+                    <div class="accordion-custom d-flex justify-content-between align-items-center">
+                      <span>Open Graph URL</span>
+                      <div class="d-flex align-items-center">
+                        <div class="switch-group mr-16">
+                          <label class="switch">
+                            <input type="checkbox" class="switch-custom" checked id="switch_1" name="switch_1">
+                            <span class="slider"></span>
+                          </label>
+                          <label for="switch_1">ON</label>
+                        </div>
+                        <label class="accordion-button-custom2" for="accordion_main8">
+                          <div class="chevron-icon"></div>
+                        </label>
+                      </div>
+                    </div>
+                    <input type="checkbox" name="accordion_main8" class="accordion-main d-none" id="accordion_main8">
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+
+                  <div class="wrap">
+                    <div class="accordion-custom d-flex justify-content-between align-items-center">
+                      <span>Twitter Title</span>
+                      <div class="d-flex align-items-center">
+                        <div class="switch-group mr-16">
+                          <label class="switch">
+                            <input type="checkbox" class="switch-custom" checked id="switch_1" name="switch_1">
+                            <span class="slider"></span>
+                          </label>
+                          <label for="switch_1">ON</label>
+                        </div>
+                        <label class="accordion-button-custom2" for="accordion_main9">
+                          <div class="chevron-icon"></div>
+                        </label>
+                      </div>
+                    </div>
+                    <input type="checkbox" name="accordion_main9" class="accordion-main d-none" id="accordion_main9">
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+
+                  <div class="wrap">
+                    <div class="accordion-custom d-flex justify-content-between align-items-center">
+                      <span>Twitter Image</span>
+                      <div class="d-flex align-items-center">
+                        <div class="switch-group mr-16">
+                          <label class="switch">
+                            <input type="checkbox" class="switch-custom" checked id="switch_1" name="switch_1">
+                            <span class="slider"></span>
+                          </label>
+                          <label for="switch_1">ON</label>
+                        </div>
+                        <label class="accordion-button-custom2" for="accordion_main10">
+                          <div class="chevron-icon"></div>
+                        </label>
+                      </div>
+                    </div>
+                    <input type="checkbox" name="accordion_main10" class="accordion-main d-none" id="accordion_main10">
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                   </div>
                   
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="heading_one">
-                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
-                        Meta description
-                        <div class="flex-grow-1"></div>
-                        <div class="form-check form-switch m-switch">
-                          <input class="form-check-input bg-switch" type="checkbox" id="flex_switch_check_checked" checked>
-                          <label class="form-check-label" for="flex_switch_check_checked">on</label>
+                  <div class="wrap">
+                    <div class="accordion-custom d-flex justify-content-between align-items-center">
+                      <span>Twitter Alt</span>
+                      <div class="d-flex align-items-center">
+                        <div class="switch-group mr-16">
+                          <label class="switch">
+                            <input type="checkbox" class="switch-custom" checked id="switch_1" name="switch_1">
+                            <span class="slider"></span>
+                          </label>
+                          <label for="switch_1">ON</label>
                         </div>
-                      </button>
-                    </h2>
-                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading_one" data-bs-parent="#accordion_example">
-                      <div class="accordion-body p-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.
+                        <label class="accordion-button-custom2" for="accordion_main11">
+                          <div class="chevron-icon"></div>
+                        </label>
                       </div>
                     </div>
-                  </div>
-                  
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="heading_one">
-                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
-                        Robots Meta Tag
-                        <div class="flex-grow-1"></div>
-                        <div class="form-check form-switch m-switch">
-                          <input class="form-check-input bg-switch" type="checkbox" id="flex_switch_check_checked" checked>
-                          <label class="form-check-label" for="flex_switch_check_checked">on</label>
-                        </div>
-                      </button>
-                    </h2>
-                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading_one" data-bs-parent="#accordion_example">
-                      <div class="accordion-body p-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.
-                      </div>
+                    <input type="checkbox" name="accordion_main11" class="accordion-main d-none" id="accordion_main11">
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                   </div>
-                  
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="heading_one">
-                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
-                        Canonical URL
-                        <div class="flex-grow-1"></div>
-                        <div class="form-check form-switch m-switch">
-                          <input class="form-check-input bg-switch" type="checkbox" id="flex_switch_check_checked" checked>
-                          <label class="form-check-label" for="flex_switch_check_checked">on</label>
+
+                  <div class="wrap">
+                    <div class="accordion-custom d-flex justify-content-between align-items-center">
+                      <span>Favicon</span>
+                      <div class="d-flex align-items-center">
+                        <div class="switch-group mr-16">
+                          <label class="switch">
+                            <input type="checkbox" class="switch-custom" checked id="switch_1" name="switch_1">
+                            <span class="slider"></span>
+                          </label>
+                          <label for="switch_1">ON</label>
                         </div>
-                      </button>
-                    </h2>
-                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading_one" data-bs-parent="#accordion_example">
-                      <div class="accordion-body p-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.
+                        <label class="accordion-button-custom2" for="accordion_main11">
+                          <div class="chevron-icon"></div>
+                        </label>
                       </div>
                     </div>
-                  </div>
-                  
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="heading_one">
-                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
-                        URL Slug
-                        <div class="flex-grow-1"></div>
-                        <div class="form-check form-switch m-switch">
-                          <input class="form-check-input bg-switch" type="checkbox" id="flex_switch_check_checked" checked>
-                          <label class="form-check-label" for="flex_switch_check_checked">on</label>
-                        </div>
-                      </button>
-                    </h2>
-                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading_one" data-bs-parent="#accordion_example">
-                      <div class="accordion-body p-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.
-                      </div>
+                    <input type="checkbox" name="accordion_main11" class="accordion-main d-none" id="accordion_main11">
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                   </div>
-                  
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="heading_one">
-                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
-                        Open Graph Title
-                        <div class="flex-grow-1"></div>
-                        <div class="form-check form-switch m-switch">
-                          <input class="form-check-input bg-switch" type="checkbox" id="flex_switch_check_checked" checked>
-                          <label class="form-check-label" for="flex_switch_check_checked">on</label>
+
+                  <div class="wrap">
+                    <div class="accordion-custom d-flex justify-content-between align-items-center">
+                      <span>XML sitemap</span>
+                      <div class="d-flex align-items-center">
+                        <div class="switch-group mr-16">
+                          <label class="switch">
+                            <input type="checkbox" class="switch-custom" checked id="switch_1" name="switch_1">
+                            <span class="slider"></span>
+                          </label>
+                          <label for="switch_1">ON</label>
                         </div>
-                      </button>
-                    </h2>
-                    <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading_one" data-bs-parent="#accordion_example">
-                      <div class="accordion-body p-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.
+                        <label class="accordion-button-custom2" for="accordion_main12">
+                          <div class="chevron-icon"></div>
+                        </label>
                       </div>
                     </div>
-                  </div>
-                  
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="heading_one">
-                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
-                        Open Graph Description
-                        <div class="flex-grow-1"></div>
-                        <div class="form-check form-switch m-switch">
-                          <input class="form-check-input bg-switch" type="checkbox" id="flex_switch_check_checked" checked>
-                          <label class="form-check-label" for="flex_switch_check_checked">on</label>
-                        </div>
-                      </button>
-                    </h2>
-                    <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading_one" data-bs-parent="#accordion_example">
-                      <div class="accordion-body p-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="heading_one">
-                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
-                        Open Graph Image
-                        <div class="flex-grow-1"></div>
-                        <div class="form-check form-switch m-switch">
-                          <input class="form-check-input bg-switch" type="checkbox" id="flex_switch_check_checked" checked>
-                          <label class="form-check-label" for="flex_switch_check_checked">on</label>
-                        </div>
-                      </button>
-                    </h2>
-                    <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading_one" data-bs-parent="#accordion_example">
-                      <div class="accordion-body p-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="heading_one">
-                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="true" aria-controls="collapse9">
-                        Open Graph URL
-                        <div class="flex-grow-1"></div>
-                        <div class="form-check form-switch m-switch">
-                          <input class="form-check-input bg-switch" type="checkbox" id="flex_switch_check_checked" checked>
-                          <label class="form-check-label" for="flex_switch_check_checked">on</label>
-                        </div>
-                      </button>
-                    </h2>
-                    <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading_one" data-bs-parent="#accordion_example">
-                      <div class="accordion-body p-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="heading_one">
-                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="true" aria-controls="collapse10">
-                        Twitter Title
-                        <div class="flex-grow-1"></div>
-                        <div class="form-check form-switch m-switch">
-                          <input class="form-check-input bg-switch" type="checkbox" id="flex_switch_check_checked" checked>
-                          <label class="form-check-label" for="flex_switch_check_checked">on</label>
-                        </div>
-                      </button>
-                    </h2>
-                    <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading_one" data-bs-parent="#accordion_example">
-                      <div class="accordion-body p-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="heading_one">
-                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="true" aria-controls="collapse11">
-                        Twitter Image
-                        <div class="flex-grow-1"></div>
-                        <div class="form-check form-switch m-switch">
-                          <input class="form-check-input bg-switch" type="checkbox" id="flex_switch_check_checked" checked>
-                          <label class="form-check-label" for="flex_switch_check_checked">on</label>
-                        </div>
-                      </button>
-                    </h2>
-                    <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading_one" data-bs-parent="#accordion_example">
-                      <div class="accordion-body p-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="heading_one">
-                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="true" aria-controls="collapse12">
-                        Twitter Image ALT
-                        <div class="flex-grow-1"></div>
-                        <div class="form-check form-switch m-switch">
-                          <input class="form-check-input bg-switch" type="checkbox" id="flex_switch_check_checked" checked>
-                          <label class="form-check-label" for="flex_switch_check_checked">on</label>
-                        </div>
-                      </button>
-                    </h2>
-                    <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading_one" data-bs-parent="#accordion_example">
-                      <div class="accordion-body p-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="heading_one">
-                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="true" aria-controls="collapse13">
-                        Favicon
-                        <div class="flex-grow-1"></div>
-                        <div class="form-check form-switch m-switch">
-                          <input class="form-check-input bg-switch" type="checkbox" id="flex_switch_check_checked" checked>
-                          <label class="form-check-label" for="flex_switch_check_checked">on</label>
-                        </div>
-                      </button>
-                    </h2>
-                    <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading_one" data-bs-parent="#accordion_example">
-                      <div class="accordion-body p-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="heading_one">
-                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="true" aria-controls="collapse14">
-                        XML Sitemap
-                        <div class="flex-grow-1"></div>
-                        <div class="form-check form-switch m-switch">
-                          <input class="form-check-input bg-switch" type="checkbox" id="flex_switch_check_checked" checked>
-                          <label class="form-check-label" for="flex_switch_check_checked">on</label>
-                        </div>
-                      </button>
-                    </h2>
-                    <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading_one" data-bs-parent="#accordion_example">
-                      <div class="accordion-body p-body">
-                        <div class="form-check check-margin">
-                          <input class="form-check-input" type="checkbox" value="" id="flex_check_default8">
-                          <label class="form-check-label" for="flex_check_default8">The page must be added to XML sitemap Address of the XML Sitemap File <input type="txt" class="form-control" id="example_form_control_input" placeholder="https://www.setmore.com/site..."></label>
+                    <input type="checkbox" name="accordion_main12" class="accordion-main d-none" id="accordion_main12">
+                    <div class="panel">
+                      <div class="form-check check-custom">
+                        <input class="form-check-input" type="checkbox" value="" id="flex_check_default8">
+                        <label class="form-check-label" for="flex_check_default8">The page must be added to XML sitemap</label>
+                        <div class="row mb-3">
+                          <label for="example_form_control_input1" class="col-sm-auto col-form-label">Address of the XML Sitemap File</label>
+                          <div class="col-sm">
+                            <input type="txt" class="form-control" id="example_form_control_input1" placeholder="https://www.setmore.com/site...">
+                          </div>
+                          <div class="col-sm-2"></div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="heading_one">
-                      <button class="accordion-button collapsed p-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="true" aria-controls="collapse15">
-                        HTML Sitemap
-                        <div class="flex-grow-1"></div>
-                        <div class="form-check form-switch m-switch">
-                          <input class="form-check-input bg-switch" type="checkbox" id="flex_switch_check_checked" checked>
-                          <label class="form-check-label" for="flex_switch_check_checked">on</label>
+
+                  <div class="wrap">
+                    <div class="accordion-custom d-flex justify-content-between align-items-center">
+                      <span>HTML sitemap</span>
+                      <div class="d-flex align-items-center">
+                        <div class="switch-group mr-16">
+                          <label class="switch">
+                            <input type="checkbox" class="switch-custom" checked id="switch_1" name="switch_1">
+                            <span class="slider"></span>
+                          </label>
+                          <label for="switch_1">ON</label>
                         </div>
-                      </button>
-                    </h2>
-                    <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="heading_one" data-bs-parent="#accordion_example">
-                      <div class="accordion-body p-body">
-                        <div class="form-check check-margin">
+                        <label class="accordion-button-custom2" for="accordion_main13">
+                          <div class="chevron-icon"></div>
+                        </label>
+                      </div>
+                    </div>
+                    <input type="checkbox" name="accordion_main13" class="accordion-main d-none" id="accordion_main13">
+                    <div class="panel">
+                      <div class="form-check check-custom">
                           <input class="form-check-input" type="checkbox" value="" id="flex_check_default9">
-                          <label class="form-check-label" for="flex_check_default9">The page must be added to XML sitemap Address of the XML Sitemap File <input type="txt" class="form-control" id="example_form_control_input" placeholder="https://www.setmore.com/site..."></label>
+                          <label class="form-check-label" for="flex_check_default9">The page must be added to HTML sitemap</label>
+                          <div class="row mb-3">
+                            <label for="example_form_control_input2" class="col-sm-auto col-form-label">Address of the HTML Sitemap File</label>
+                            <div class="col-sm">
+                              <input type="txt" class="form-control" id="example_form_control_input2" placeholder="https://www.setmore.com/site...">
+                            </div>
+                            <div class="col-sm-2"></div>
+                          </div>
                         </div>
-                      </div>
                     </div>
                   </div>
 
+                </div>
 
                 </div>
 

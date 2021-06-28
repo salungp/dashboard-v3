@@ -42,15 +42,6 @@ body{
 	color: #888888;
 }
 
-.mb-28{
-	margin-bottom: 28px;
-}
-.mb-24{
-	margin-bottom: 24px;
-}
-.mb-18{
-	margin-bottom: 18px;
-}
 
 .invalid{
 	border: 1.4px solid #EB5757;
@@ -60,10 +51,6 @@ body{
 	font-size: 12px;
 	line-height: 18px;
 	color: #EB5757;
-}
-
-.h-5{
-	height: 50px;
 }
 
 @media (max-width: 768px) {

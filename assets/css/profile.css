@@ -21,3 +21,86 @@
 	letter-spacing: -0.02em;
 	color: #EB5757;
 }
+
+.modal-header-custom{
+	padding: 20px 30px;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.modal-account{
+	padding: 20px 30px 24px 30px;
+}
+
+.check-label-custom{
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: -0.02em;
+	color: #515A68;
+	margin-left: 8px
+}
+
+.textarea-custom{
+	padding: 14px 20px;
+	margin-bottom: 4px;
+	font-size: 14px;
+	line-height: 21px;
+	height: 100px;
+}
+
+.max-length{
+	font-size: 10px;
+	line-height: 15px;
+	letter-spacing: -0.02em;
+	color: #6B7A90;
+}
+
+.modal-header-login{
+	padding: 20px 28px 18px 28px;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 27px;
+	color: #142640;
+}
+
+.modal-body-login{
+	padding: 35px 28px 50px 28px;
+}
+
+.modal-label-custom{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.02em;
+	color: #363853;
+	margin-bottom: 10px;
+}
+
+.link-login{
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: -0.02em;
+	text-decoration: none;
+}
+
+
+@media (max-width: 768px){
+	.label-custom{
+		font-size: 14px;
+		line-height: 21px;
+	}
+
+	.modal-account{
+		padding: 20px 30px 64px 30px;
+	}
+
+	.modal-header-login{
+		padding: 20px 26px 18px 26px;
+	}
+
+	.modal-body-login{
+		padding: 26px 26px 44px 26px;
+	}
+}
